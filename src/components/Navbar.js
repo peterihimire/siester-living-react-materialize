@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/siester-logo.svg";
+import close from "../assets/close-icon.svg";
 import menu from "../assets/menu-icon.svg";
 import { NavLink, Link } from "react-router-dom";
+import M from "materialize-css/dist/js/materialize.min.js";
 
 const Navbar = () => {
+  useEffect(() => {
+    // sidenav
+    const sideNav = document.querySelector(".sidenav");
+    M.Sidenav.init(sideNav, {});
+  });
+
   return (
     <>
       <div>
@@ -61,7 +69,7 @@ const Navbar = () => {
 
       <ul className="sidenav" id="mobile-nav">
         <div className="sidenav-close">
-          <img src={logo} alt="close-icon " />
+          <img src={close} alt="close-icon " />
         </div>
         <div className="sidenav-logo">
           <Link to="/">
@@ -132,7 +140,7 @@ const Navbar = () => {
                 </a>
               </div> */}
             <div className="white-txt bold-txt">
-              <p>©COPYRIGHT PAYMONTHLYCARS.COM 2020</p>
+              <p>©COPYRIGHT SIESTERLIVING 2021</p>
             </div>
           </div>
         </div>
