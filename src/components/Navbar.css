@@ -1,0 +1,7 @@
+nav.trans-nav {
+  background-color: transparent !important;
+  color: var(--main-black) !important;
+  z-index: 99 !important;
+  position: fixed !important;
+  box-shadow: none !important;
+}
