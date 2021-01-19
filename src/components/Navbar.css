@@ -76,20 +76,22 @@ nav button.nav-pry-btn.btn {
 }
 
 .sidenav {
-  background-color: var(--sec-color);
-  color: white;
+  background-color: var(--sec-color) !important;
+  color: var(--main-white) !important;
+  width: 50% !important;
 }
 .sidenav li > a {
-  color: white;
-  font-family: var(--font-smbold);
-  font-size: 2rem;
-  margin: 10px 0;
+  color: var(--main-white) !important;
+  font-family: var(--font-xbold) !important;
+  font-size: 6rem !important;
+  margin: 60px 0 !important;
   transition: all 0.5s;
+  text-transform: capitalize !important;
 }
 .sidenav li > a:hover {
   background-color: transparent;
-  color: var(--pry-color);
-  text-decoration: underline;
+  color: var(--pri-color) !important;
+  text-decoration: underline !important;
 }
 .close-icon.sidenav-close {
   width: 15px;
@@ -112,9 +114,9 @@ nav button.nav-pry-btn.btn {
   color: white;
   border-color: var(--pry-color);
 }
-#slide-out li:first-child {
-  margin: 30px 0;
-}
+/* #slide-out li:first-child {
+  margin: 30px 0 !important;
+} */
 .sidenav-contacts {
   margin-top: 40px;
 }
@@ -128,11 +130,11 @@ nav button.nav-pry-btn.btn {
 .pry-nav-btn {
   background-color: white;
   color: var(--pry-color);
-  border: 1px solid var(--pry-color);
+  border: 1px solid var(--pri-color);
 }
 .pry-btn {
   background-color: white;
-  color: var(--pry-color);
+  color: var(--pri-color);
   border: 1px solid white;
 }
 .sec-btn {
@@ -142,4 +144,33 @@ nav button.nav-pry-btn.btn {
 }
 img.menu-icon-img {
   width: 29px;
+}
+.sidenav {
+  /* width: 50% !important; */
+}
+@media (max-width: 992px) {
+  .sidenav li > a {
+    color: var(--main-white) !important;
+    font-family: var(--font-xbold) !important;
+    font-size: 4rem !important;
+    margin: 10px 0 !important;
+    transition: all 0.5s;
+    text-transform: capitalize !important;
+  }
+  .sidenav {
+    width: 60% !important;
+  }
+}
+@media (max-width: 600px) {
+  .sidenav {
+    width: 80% !important;
+  }
+  .sidenav li > a {
+    color: var(--main-white) !important;
+    font-family: var(--font-xbold) !important;
+    font-size: 2rem !important;
+    margin: 10px 0 !important;
+    transition: all 0.5s;
+    text-transform: capitalize !important;
+  }
 }

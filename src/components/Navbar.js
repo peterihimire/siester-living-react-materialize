@@ -25,10 +25,10 @@ const Navbar = () => {
             </div>
             <a
               href="/"
-              className="right sidenav-trigger"
+              className="right sidenav-trigger show-on-large"
               data-target="mobile-nav"
             >
-              <img src={menu} alt="menu icon" />
+              <img src={menu} alt="menu icon" className="" />
             </a>
 
             {/* <ul className="hide right nav-links">
@@ -81,11 +81,11 @@ const Navbar = () => {
         <div className="sidenav-close">
           <img src={close} alt="close-icon " />
         </div>
-        <div className="sidenav-logo">
+        {/* <div className="sidenav-logo">
           <Link to="/">
             <img src={logo} alt="paymonthly-logo" />
           </Link>
-        </div>
+        </div> */}
 
         <li className="nav-item ">
           <NavLink
@@ -127,7 +127,7 @@ const Navbar = () => {
             FAQs
           </NavLink>
         </li>
-
+{/* 
         <li className="nav-item login-style">
           <a href="#log-in" className="modal-trigger sidenav-login">
             log in
@@ -137,7 +137,7 @@ const Navbar = () => {
           <a href="#get-started" className=" modal-trigger sidenav-signup ">
             get started
           </a>
-        </li>
+        </li> */}
 
         <div className="sidenav-footer ">
           <div className="sidenav-footer-container center">

@@ -12,6 +12,12 @@
   font-weight: normal;
 }
 @font-face {
+  font-family: "trueno-extra-bold";
+  src: local("trueno"), url("./fonts/trueno/TruenoExBd.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
   font-family: "trueno-lite";
   src: local("trueno"), url("./fonts/trueno/TruenoLt.woff") format("woff");
   font-style: normal;
@@ -36,6 +42,7 @@
 
   --font: trueno, sans-serif;
   --font-bold: trueno-bold, sans-serif;
+  --font-xbold: trueno-extra-bold, sans-serif;
   --font-lite: trueno-lite, sans-serif;
 }
 * {
@@ -152,10 +159,10 @@ h4 {
 .center-sm {
   text-align: center;
 }
-.sec-color{
+.sec-color {
   color: var(--sec-color);
 }
-.pri-color{
+.pri-color {
   color: var(--pri-color);
 }
 .btn {
@@ -197,7 +204,6 @@ h4 {
     width: 100%;
   }
 }
-
 
 /* new */
 /* Custom Stylesheet */
@@ -692,69 +698,69 @@ a.app-store-link img {
 .scale-up:hover {
   transform: scale(1.05);
 }
-@media(min-width: 601px) and (max-width: 992px){
+@media (min-width: 601px) and (max-width: 992px) {
   .text-side {
-      margin-top: 0;
+    margin-top: 0;
   }
   img.siester-phone-img {
-      width: 90%;
-      margin-top: 0;
+    width: 90%;
+    margin-top: 0;
   }
   section#siester {
-      padding: 80px 0 50px;
+    padding: 80px 0 50px;
   }
   #siester-mobile {
-      padding: 0 0 50px !important;
+    padding: 0 0 50px !important;
   }
 }
-@media(min-width: 601px){
+@media (min-width: 601px) {
   img.full-width.s-prop {
-      width: 90% !important;
+    width: 90% !important;
   }
   img.siester-phone-img {
-      width: 80% !important;
-      margin-top: -30px !important;
+    width: 80% !important;
+    margin-top: -30px !important;
   }
 }
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   section#siester {
-      padding: 20px 0 !important;
+    padding: 20px 0 !important;
   }
   .text-side {
-      margin-top: 20px !important;
+    margin-top: 20px !important;
   }
   .text-side p {
-      text-align: justify;
+    text-align: justify;
   }
   #siester-mobile {
-      padding: 0 0 20px;
+    padding: 0 0 20px;
   }
   img.siester-mobile-txt.full-width {
-      width: 90% !important;
-      margin-top: 10px !important;
+    width: 90% !important;
+    margin-top: 10px !important;
   }
   #siester-mobile p {
-      text-align: justify;
+    text-align: justify;
   }
 
   img.home-abs-img {
-      position: relative !important;
-      top: 0;
-      width: 100% !important;
-      z-index: -1;
-      right: 0 !important;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+    z-index: -1;
+    right: 0 !important;
   }
   /* notice */
   h1.banner-title {
-      font-size: 3rem;
-      text-align: center;
-      font-family: var(--font-xbold);
+    font-size: 3rem;
+    text-align: center;
+    /* font-family: var(--font-xbold); */
   }
-  #home .carousel.carousel-slider .carousel-item p, .home-btn-wrapper{
-      width: 100% !important;
-      text-align: center;
+  #home .carousel.carousel-slider .carousel-item p,
+  .home-btn-wrapper {
+    width: 100% !important;
+    text-align: center;
   }
-
 }
 /*=== end of Siester-Mobile Section ===*/
 
