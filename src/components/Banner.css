@@ -1,27 +1,27 @@
 section#home {
-  position: relative;
-  height: 85vh;
-  /* background-color: white; */
+  position: relative !important;
+  height: 85vh !important;
+  background-color: white;
   font-family: var(--font-xlite);
-  min-height: 500px;
-  max-height: 600px;
+  min-height: 500px !important; 
+  max-height: 600px !important;
 }
 .full-height {
   height: 100% !important;
 }
 .slide-banner.carousel-item {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 img.home-abs-img {
   position: absolute !important;
   top: 0;
   width: 50% !important;
   z-index: -1 !important;
-  right: -80px;
+  right: -80px !important;
 }
 .main-txt-wrapper {
   position: absolute !important;
-  top: 25%;
+  top: 25% !important;
   font-family: var(--font);
 }
 .home-banner-btn {
@@ -45,45 +45,40 @@ img.home-abs-img {
   cursor: pointer;
 }
 #home .carousel.carousel-slider .carousel-item p {
-  width: 80%;
+  width: 80% !important;
 }
 @media (min-width: 1200px) {
   .main-txt-wrapper {
     width: 690px !important;
   }
-  section#home {
-    min-height: 780px;
-    height: 100vh;
-  }
+  /* section#home {
+    min-height: 780px !important;
+    height: 100vh !important;
+  } */
 }
-/* @media (min-width: 993px) {
-  section#home {
-    min-height: 780px;
-    height: 100vh;
-  }
-} */
+
 @media (max-width: 992px) {
   .slide-banner.carousel-item {
-    background-position: 85%;
+    background-position: 85% !important;
   }
 }
 @media (min-width: 601px) {
 }
 @media (max-width: 600px) {
   section#home {
-    min-height: 780px;
-    height: 100vh;
+    min-height: 780px !important;
+    height: 100vh !important;
   }
   .main-txt-wrapper {
-    position: relative;
+    position: relative !important;
     top: 0;
   }
   #home .carousel.carousel-slider .carousel-item .container {
-    z-index: 2 !important;
-    position: relative;
+    /* z-index: 2 !important; */
+    position: relative !important;
   }
   .home-banner-btn {
-    margin-top: 20px;
+    margin-top: 20px !important;
     background-color: var(--sec-color);
     color: white;
     width: 180px;

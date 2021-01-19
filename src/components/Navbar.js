@@ -31,7 +31,7 @@ const Navbar = () => {
               <img src={menu} alt="menu icon" />
             </a>
 
-            <ul className="hide-on-med-and-down right nav-links">
+            {/* <ul className="hide right nav-links">
               <li className="nav-item">
                 <NavLink
                   exact
@@ -49,10 +49,19 @@ const Navbar = () => {
                   className="navbar-single-link"
                   to="/about"
                 >
-                  About
+                  About Us
                 </NavLink>
               </li>
-
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  activeClassName="active"
+                  className="navbar-single-link"
+                  to="/about"
+                >
+                  Co-Ownership
+                </NavLink>
+              </li>
               <li className="nav-item">
                 <NavLink
                   exact
@@ -63,7 +72,7 @@ const Navbar = () => {
                   FAQs
                 </NavLink>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </nav>
       </div>
@@ -95,7 +104,17 @@ const Navbar = () => {
             className="navbar-single-link-2"
             to="/about"
           >
-            about
+            about us
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink
+            exact
+            activeClassName="active-2"
+            className="navbar-single-link-2"
+            to="/about"
+          >
+            co-ownership
           </NavLink>
         </li>
         <li className="nav-item">

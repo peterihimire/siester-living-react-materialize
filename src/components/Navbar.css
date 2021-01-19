@@ -1,7 +1,145 @@
-nav.trans-nav {
+/* nav.trans-nav {
   background-color: transparent !important;
   color: var(--main-black) !important;
   z-index: 99 !important;
   position: fixed !important;
   box-shadow: none !important;
+} */
+nav.trans-nav {
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  box-shadow: none;
+  height: 90px;
+  z-index: 10 !important;
+  font-family: var(--pry-font-bold);
+}
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+nav.trans-nav ul a {
+  font-size: 0.86rem;
+}
+nav.scrolled-nav.trans-nav {
+  height: 65px;
+  background-color: white;
+}
+nav.trans-nav ul > li > a {
+  color: white;
+  border-bottom: 1px solid rgba(241, 241, 241, 0.5);
+}
+nav.trans-nav ul > li > a.active {
+  border-bottom: 1px solid white;
+}
+
+nav .brand-logo {
+  top: -10px;
+}
+a.brand-logo img {
+  width: 150px;
+  position: relative;
+  top: 20px;
+}
+a.sidenav-trigger.sec-color.right {
+  position: relative ;
+  top: 5px ;
+}
+nav.trans-nav ul#nav-mobile {
+  top: 10px;
+  position: relative;
+}
+nav.scrolled-nav.trans-nav ul#nav-mobile {
+  top: 0;
+}
+nav.scrolled-nav a.brand-logo img {
+  width: 150px;
+  height: auto;
+  top: 0;
+}
+nav.scrolled-nav .brand-logo {
+  top: 7px;
+}
+button.nav-pry-btn.btn {
+  background: var(--pry-color);
+  font-size: 10px;
+  border-radius: 20px;
+  width: auto;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: var(--pry-font-bold);
+}
+nav button.nav-pry-btn.btn {
+  margin-bottom: 0;
+}
+#nav-mobile li:last-child a:hover {
+  background-color: transparent;
+}
+
+.sidenav {
+  background-color: var(--sec-color);
+  color: white;
+}
+.sidenav li > a {
+  color: white;
+  font-family: var(--font-smbold);
+  font-size: 2rem;
+  margin: 10px 0;
+  transition: all 0.5s;
+}
+.sidenav li > a:hover {
+  background-color: transparent;
+  color: var(--pry-color);
+  text-decoration: underline;
+}
+.close-icon.sidenav-close {
+  width: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.bb-1 button.nav-modal-btn.sec-btn {
+  font-size: 12px;
+  color: var(--pry-color);
+  background-color: white;
+  font-weight: 500;
+  width: 150px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.bb-1 button.nav-modal-btn.sec-btn:hover {
+  background-color: var(--pry-color);
+  color: white;
+  border-color: var(--pry-color);
+}
+#slide-out li:first-child {
+  margin: 30px 0;
+}
+.sidenav-contacts {
+  margin-top: 40px;
+}
+.social-icons img {
+  width: 30px;
+  padding: 10px 5px;
+}
+.bb-1 {
+  margin-top: 20px;
+}
+.pry-nav-btn {
+  background-color: white;
+  color: var(--pry-color);
+  border: 1px solid var(--pry-color);
+}
+.pry-btn {
+  background-color: white;
+  color: var(--pry-color);
+  border: 1px solid white;
+}
+.sec-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+img.menu-icon-img {
+  width: 29px;
 }
