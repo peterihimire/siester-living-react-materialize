@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './Navbar.css';
+import "./Navbar.css";
 import logo from "../assets/siester-logo.svg";
 import close from "../assets/close-icon.svg";
 import menu from "../assets/menu-icon.svg";

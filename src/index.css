@@ -152,6 +152,12 @@ h4 {
 .center-sm {
   text-align: center;
 }
+.sec-color{
+  color: var(--sec-color);
+}
+.pri-color{
+  color: var(--pri-color);
+}
 .btn {
   background-color: var(--pri-color) !important;
   color: var(--main-white) !important;

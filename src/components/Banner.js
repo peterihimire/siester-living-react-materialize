@@ -85,8 +85,8 @@ const Banner = () => {
             />
             <div className="container">
               <div className="main-txt-wrapper col s12 m10 l4">
-                <h1 className="banner-title pry-color">
-                  <span className="sec-color">Rent a home for</span>{" "}
+                <h1 className="banner-title pri-color">
+                  <span className="sec-color">Rent a home for</span>
                   <br className="hidden-xs" />a day or more
                 </h1>
 
@@ -118,14 +118,14 @@ const Banner = () => {
             />
             <div className="container">
               <div class="main-txt-wrapper col s12 m10 l4">
-                <h1 class="banner-title pry-color">
+                <h1 class="banner-title pri-color">
                   <span className="sec-color">Need a place to throw</span>{" "}
                   <br className="hidden-xs" />a house party?
                 </h1>
                 <p>
                   <span>
                     Rent a fully furnished villa in Lagos from as low as
-                    <span className="bold-txt pry-color">N50,000 per day</span>.
+                    <span className="bold-txt pri-color">N50,000 per day</span>.
                     Cheaper than a hotel, with a lot of rooms to spare.
                   </span>
                 </p>
