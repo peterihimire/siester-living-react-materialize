@@ -3,7 +3,7 @@ section#home {
   height: 85vh !important;
   background-color: white;
   font-family: var(--font-xlite);
-  min-height: 500px !important; 
+  min-height: 500px !important;
   max-height: 600px !important;
 }
 .full-height {
@@ -51,10 +51,10 @@ img.home-abs-img {
   .main-txt-wrapper {
     width: 690px !important;
   }
-  /* section#home {
+  section#home {
     min-height: 780px !important;
-    height: 100vh !important;
-  } */
+    height: 80vh !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -77,6 +77,9 @@ img.home-abs-img {
   #home .carousel.carousel-slider .carousel-item .container {
     /* z-index: 2 !important; */
     position: relative !important;
+  }
+  #home .carousel.carousel-slider .carousel-item p {
+    width: 100% !important;
   }
   .home-banner-btn {
     margin-top: 20px !important;
