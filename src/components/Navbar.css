@@ -78,12 +78,12 @@ nav button.nav-pry-btn.btn {
 .sidenav {
   background-color: var(--sec-color) !important;
   color: var(--main-white) !important;
-  width: 50% !important;
+  width: 60% !important;
 }
 .sidenav li > a {
   color: var(--main-white) !important;
   font-family: var(--font-xbold) !important;
-  font-size: 6rem !important;
+  font-size: 4rem !important;
   margin: 60px 0 !important;
   transition: all 0.5s;
   text-transform: capitalize !important;
@@ -94,8 +94,8 @@ nav button.nav-pry-btn.btn {
   text-decoration: underline !important;
 }
 .close-icon.sidenav-close {
-  width: 15px;
-  margin-top: 20px;
+  width: 15px !important;
+  margin-top: 20px !important;
   cursor: pointer;
 }
 .bb-1 button.nav-modal-btn.sec-btn {
@@ -152,7 +152,7 @@ img.menu-icon-img {
   .sidenav li > a {
     color: var(--main-white) !important;
     font-family: var(--font-xbold) !important;
-    font-size: 4rem !important;
+    font-size: 3.5rem !important;
     margin: 10px 0 !important;
     transition: all 0.5s;
     text-transform: capitalize !important;
