@@ -7,7 +7,11 @@ import menu from "../assets/menu-icon.svg";
 import { NavLink, Link } from "react-router-dom";
 import M from "materialize-css/dist/js/materialize.min.js";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  console.log(props);
+  const { defNavColor } = props;
+  console.log(defNavColor);
+
   useEffect(() => {
     // sidenav
     const sideNav = document.querySelector(".sidenav");
@@ -17,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <nav className="trans-nav">
+        <nav className={defNavColor ? "trans-nav nav-color" : "trans-nav"}>
           <div className="container nav-wrapper">
             <div className="logo-container">
               <Link to="/" className="brand-logo left">

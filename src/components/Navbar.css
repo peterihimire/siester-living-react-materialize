@@ -3,7 +3,7 @@ nav.trans-nav {
   background-color: transparent;
   width: 100%;
   box-shadow: none;
-  height: 90px;
+  /* height: 90px; */
   z-index: 10 !important;
   font-family: var(--pry-font-bold);
 }
@@ -13,10 +13,14 @@ nav ul a:hover {
 nav.trans-nav ul a {
   font-size: 0.86rem;
 }
-nav.scrolled-nav.trans-nav {
-  height: 65px;
-  background-color: white;
+
+/* color nav */
+nav.nav-color {
+  background-color: var(--main-white) !important;
 }
+
+/* end of color nav */
+
 nav.trans-nav ul > li > a {
   color: white;
   border-bottom: 1px solid rgba(241, 241, 241, 0.5);

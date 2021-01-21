@@ -1,5 +1,6 @@
 section#available-space {
-  background-color: thistle;
+  /* background-color: thistle; */
+  padding: 3rem 0;
 }
 
 .space-img {
@@ -22,4 +23,14 @@ section#available-space {
   border-radius: 4px !important;
   margin: 25px 0 10px !important;
   font-family: var(--font) !important;
+}
+.available-header {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+}
+.available-info{
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
 }
