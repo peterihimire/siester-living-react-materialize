@@ -1,0 +1,25 @@
+section#available-space {
+  background-color: thistle;
+}
+
+.space-img {
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.space-img img {
+  width: 95%;
+  /* height: 300px; */
+}
+.available-btn {
+  cursor: pointer;
+  width: 160px !important;
+  height: 50px !important;
+  font-size: 13px !important;
+  color: var(--sec-color) !important;
+  background: transparent !important;
+  border: 1px solid var(--sec-color) !important;
+  border-radius: 4px !important;
+  margin: 25px 0 10px !important;
+  font-family: var(--font) !important;
+}
