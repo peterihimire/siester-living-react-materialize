@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
 import logo from "../assets/siester-logo.svg";
+import logoWhite from "../assets/siester-logo-white.svg";
 import close from "../assets/close-icon.svg";
 import menu from "../assets/menu-icon.svg";
 import { NavLink, Link } from "react-router-dom";
@@ -81,11 +82,11 @@ const Navbar = () => {
         <div className="sidenav-close">
           <img src={close} alt="close-icon " />
         </div>
-        {/* <div className="sidenav-logo">
+        <div className="sidenav-logo">
           <Link to="/">
-            <img src={logo} alt="paymonthly-logo" />
+            <img src={logoWhite} alt="paymonthly-logo" />
           </Link>
-        </div> */}
+        </div>
 
         <li className="nav-item ">
           <NavLink
@@ -127,7 +128,7 @@ const Navbar = () => {
             FAQs
           </NavLink>
         </li>
-{/* 
+        {/* 
         <li className="nav-item login-style">
           <a href="#log-in" className="modal-trigger sidenav-login">
             log in
@@ -159,8 +160,10 @@ const Navbar = () => {
                   <img src={logo} alt="ing" />
                 </a>
               </div> */}
-            <div className="white-txt bold-txt">
-              <p>©COPYRIGHT SIESTERLIVING 2021</p>
+            <div className="sidenav-footer-text">
+              <p>
+                ©COPYRIGHT <span> SIESTERLIVING</span> 2021
+              </p>
             </div>
           </div>
         </div>

@@ -74,29 +74,44 @@ nav button.nav-pry-btn.btn {
 #nav-mobile li:last-child a:hover {
   background-color: transparent;
 }
-
+a {
+  background: none !important;
+}
 .sidenav {
   background-color: var(--sec-color) !important;
   color: var(--main-white) !important;
-  width: 60% !important;
+  width: 50% !important;
 }
 .sidenav li > a {
   color: var(--main-white) !important;
   font-family: var(--font-xbold) !important;
-  font-size: 4rem !important;
+  font-size: 3rem !important;
   margin: 60px 0 !important;
   transition: all 0.5s;
   text-transform: capitalize !important;
+  padding: 0 100px !important;
 }
 .sidenav li > a:hover {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: none !important;
   color: var(--pri-color) !important;
   text-decoration: underline !important;
 }
-.close-icon.sidenav-close {
+.sidenav-logo {
+  padding: 2rem 100px 0 100px;
+}
+/* .close-icon.sidenav-close {
   width: 15px !important;
   margin-top: 20px !important;
   cursor: pointer;
+} */
+.sidenav-close {
+  display: flex !important;
+  justify-content: flex-end !important;
+  padding: 1rem 100px 2rem 0 !important ;
+}
+.sidenav-close img {
+  width: 20px;
 }
 .bb-1 button.nav-modal-btn.sec-btn {
   font-size: 12px;
@@ -129,7 +144,7 @@ nav button.nav-pry-btn.btn {
 }
 .pry-nav-btn {
   background-color: white;
-  color: var(--pry-color);
+  color: var(--pri-color);
   border: 1px solid var(--pri-color);
 }
 .pry-btn {
@@ -148,19 +163,57 @@ img.menu-icon-img {
 .sidenav {
   /* width: 50% !important; */
 }
+.sidenav-footer-text span {
+  color: var(--pri-color);
+}
+.sidenav-logo img {
+  width: 200px;
+}
+@media (min-width: 993px) {
+  .sidenav-footer {
+    margin: 100px 0 0 0;
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+  }
+}
 @media (max-width: 992px) {
+  .sidenav-logo {
+    padding: 2rem 50px 0 50px;
+  }
+  .sidenav-logo img {
+    width: 150px;
+  }
   .sidenav li > a {
     color: var(--main-white) !important;
     font-family: var(--font-xbold) !important;
-    font-size: 3.5rem !important;
-    margin: 10px 0 !important;
+    font-size: 2.5rem !important;
+    margin: 30px 0 !important;
     transition: all 0.5s;
     text-transform: capitalize !important;
+    padding: 0 50px !important;
+  }
+  .sidenav li > a:hover {
+    background-color: none !important;
+    color: var(--pri-color) !important;
+    text-decoration: underline !important;
   }
   .sidenav {
-    width: 60% !important;
+    width: 50% !important;
+  }
+  .sidenav-footer {
+    margin: 100px 0 0 0;
+    position: absolute;
+    width: 100%;
+    bottom: 90px;
+  }
+  .sidenav-close {
+    display: flex !important;
+    justify-content: flex-end !important;
+    padding: 1rem 50px 2rem 0 !important ;
   }
 }
+
 @media (max-width: 600px) {
   .sidenav {
     width: 80% !important;
@@ -169,8 +222,15 @@ img.menu-icon-img {
     color: var(--main-white) !important;
     font-family: var(--font-xbold) !important;
     font-size: 2rem !important;
-    margin: 10px 0 !important;
+    margin: 20px 0 !important;
     transition: all 0.5s;
     text-transform: capitalize !important;
+  }
+  .sidenav-footer {
+    margin: 100px 0 0 0;
+    bottom: 90px;
+  }
+  .sidenav-logo img {
+    width: 120px;
   }
 }
