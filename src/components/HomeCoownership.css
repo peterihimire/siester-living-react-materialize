@@ -2,6 +2,7 @@ section#home-coownership {
   background-color: var(--pri-color);
   color: var(--main-white);
   padding: 3rem 0;
+  /* position: relative; */
 }
 .home-coownership-img-div {
   width: 100%;
@@ -14,7 +15,27 @@ section#home-coownership {
   justify-content: center;
 }
 .home-coownership-btn-div {
+  display: flex;
+  justify-content: center;
+}
+.btn-coownership {
 }
 .home-coownership-container h4 {
   text-align: center;
+  padding: 0 0 1rem 0;
+}
+.home-coownership-text p {
+  padding: 0 0 1rem 0;
+}
+@media (min-width: 601px) {
+}
+@media (max-width: 600px) {
+  .home-coownership-img-div {
+    width: 100%;
+    padding: 0 0 2rem 0;
+  }
+  .home-coownership-text p {
+    padding: 0 0 1rem 0;
+    text-align: center;
+  }
 }
