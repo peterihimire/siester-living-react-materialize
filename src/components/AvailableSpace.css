@@ -12,7 +12,7 @@ section#available-space {
   width: 95%;
   /* height: 300px; */
 }
-.available-btn {
+/* .available-btn {
   cursor: pointer;
   width: 160px !important;
   height: 50px !important;
@@ -23,7 +23,7 @@ section#available-space {
   border-radius: 4px !important;
   margin: 25px 0 10px !important;
   font-family: var(--font) !important;
-}
+} */
 .available-header {
   display: flex;
   justify-content: center;

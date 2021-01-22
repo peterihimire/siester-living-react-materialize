@@ -132,6 +132,16 @@ const Navbar = (props) => {
             FAQs
           </NavLink>
         </li>
+  
+          <NavLink
+            exact
+            activeClassName="active-2"
+            className="btn btn-bigger"
+            to="/"
+          >
+            book now
+          </NavLink>
+   
         {/* 
         <li className="nav-item login-style">
           <a href="#log-in" className="modal-trigger sidenav-login">

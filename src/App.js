@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import AvailableSpace from "./components/AvailableSpace";
+import HomeCoownership from "./components/HomeCoownership";
 
 function App() {
   // For Nav Color
@@ -33,6 +34,7 @@ function App() {
       <Navbar defNavColor={navColor.isColor} />
       <Banner />
       <AvailableSpace />
+      <HomeCoownership />
     </>
   );
 }

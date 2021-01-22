@@ -1,0 +1,20 @@
+section#home-coownership {
+  background-color: var(--pri-color);
+  color: var(--main-white);
+  padding: 3rem 0;
+}
+.home-coownership-img-div {
+  width: 100%;
+}
+.home-coownership-img-div img {
+  width: 100%;
+}
+.home-coownership-header {
+  display: flex;
+  justify-content: center;
+}
+.home-coownership-btn-div {
+}
+.home-coownership-container h4 {
+  text-align: center;
+}

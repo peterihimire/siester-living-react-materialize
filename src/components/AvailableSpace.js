@@ -31,7 +31,7 @@ const AvailableSpace = () => {
               </div>
               <div className="available-info">
                 <p>Want more information ? Call 08060958134</p>
-                <button className="btn available-btn">book now</button>
+                <button className="btn">book now</button>
               </div>
             </div>
           </div>
