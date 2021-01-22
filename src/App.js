@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import AvailableSpace from "./components/AvailableSpace";
 import HomeCoownership from "./components/HomeCoownership";
+import OwnerPartner from "./components/OwnerPartner";
+import SiesterMobile from "./components/SiesterMobile";
 
 function App() {
   // For Nav Color
@@ -35,6 +37,8 @@ function App() {
       <Banner />
       <AvailableSpace />
       <HomeCoownership />
+      <OwnerPartner />
+      <SiesterMobile />
     </>
   );
 }
