@@ -1,0 +1,28 @@
+footer {
+  background-color: var(--sec-color);
+  padding: 3rem 0;
+  color: var(--main-white);
+}
+.footer-logo img{
+  width: 15%;
+}
+.footer-content h6 {
+  text-transform: uppercase;
+}
+.footer-content ul{
+  font-size: .8rem !important;
+  text-transform: capitalize;
+}
+.footer-content li{
+  padding: .4rem 0;
+}
+
+@media (max-width: 600px){
+  .footer-logo img{
+    width: 30%;
+  }
+  .footer-content h6 {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}

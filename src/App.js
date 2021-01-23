@@ -7,7 +7,7 @@ import HomeCoownership from "./components/HomeCoownership";
 import OwnerPartner from "./components/OwnerPartner";
 import SiesterMobile from "./components/SiesterMobile";
 import TourSection from "./components/TourSection";
-
+import Footer from "./components/Footer";
 function App() {
   // For Nav Color
   const [navColor, setNavColor] = useState({
@@ -19,7 +19,7 @@ function App() {
       console.log(window.scrollY);
       let position = window.pageYOffset;
       console.log(position);
-      if (position > 50) {
+      if (position > 100) {
         console.log("I am at position above 50px");
         setNavColor({
           isColor: true,
@@ -41,6 +41,7 @@ function App() {
       <OwnerPartner />
       <SiesterMobile />
       <TourSection />
+      <Footer />
     </>
   );
 }

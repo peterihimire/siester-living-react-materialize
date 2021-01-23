@@ -215,6 +215,9 @@ h4 {
   .btn-full-width {
     width: 100%;
   }
+  .center-sm {
+    text-align: center;
+  }
 }
 
 /* new */
@@ -672,7 +675,7 @@ img.space-img {
 /*=== end of Home-Owner Section ===*/
 
 /*=== Siester-Mobile Section ===*/
-section#siester-mobile {
+/* section#siester-mobile {
   padding: 60px 0 30px;
 }
 img.siester-logo-txt {
@@ -733,9 +736,9 @@ a.app-store-link img {
     width: 80% !important;
     margin-top: -30px !important;
   }
-}
+} */
 @media (max-width: 600px) {
-  section#siester {
+  /* section#siester {
     padding: 20px 0 !important;
   }
   .text-side {
@@ -761,18 +764,18 @@ a.app-store-link img {
     width: 100% !important;
     z-index: -1;
     right: 0 !important;
-  }
+  } */
   /* notice */
   h1.banner-title {
-    font-size: 3rem;
-    text-align: center;
+    /* font-size: 3rem;
+    text-align: center; */
     /* font-family: var(--font-xbold); */
   }
-  #home .carousel.carousel-slider .carousel-item p,
+  /* #home .carousel.carousel-slider .carousel-item p,
   .home-btn-wrapper {
     width: 100% !important;
     text-align: center;
-  }
+  } */
 }
 /*=== end of Siester-Mobile Section ===*/
 

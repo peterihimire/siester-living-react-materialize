@@ -1,14 +1,12 @@
 section#tour-section {
-  /* height: 60px !important;
-  margin: 0 !important;
-  padding: 0 !important; */
+  padding: 0rem 0 !important;
+  margin: -1rem 0;
 }
 
 .tour-img {
   width: 100%;
-  /* height: 50px !important; */
+  cursor: pointer;
 }
 .tour-img img {
   width: 100%;
-  /* height: 700px; */
 }
