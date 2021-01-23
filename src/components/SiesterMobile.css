@@ -12,8 +12,7 @@ section#siester-mobile {
   width: 100%;
 }
 .siester-mobile-header {
-  /* display: flex;
-  justify-content: center; */
+ width: 100%;
 }
 .siester-mobile-btn-div {
   display: flex;
@@ -48,4 +47,7 @@ section#siester-mobile {
     padding: 0 0 1rem 0;
     text-align: center;
   }
+  .siester-mobile-header img {
+    width: 80% !important;
+   }
 }

@@ -29,8 +29,14 @@ section#available-space {
   justify-content: center;
   margin: 0 0 1rem 0;
 }
-.available-info{
+.available-info {
   /* display: flex;
   justify-content: center; */
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .space-img img {
+    width: 100% !important;
+  }
 }
