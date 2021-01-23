@@ -58,7 +58,7 @@
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--vasiti-black);
+  background: var(--pri-color);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {

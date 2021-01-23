@@ -1,0 +1,25 @@
+section#owner-partner {
+  /* background-color: thistle; */
+  padding: 3rem 0;
+}
+
+.space-img {
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.space-img img {
+  width: 95%;
+  /* height: 300px; */
+}
+
+.owner-header {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+}
+.owner-info{
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}

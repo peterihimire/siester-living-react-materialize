@@ -1,6 +1,9 @@
 import React from "react";
 import "./SiesterMobile.css";
 import siesterPhone from "../assets/siester-phone.png";
+import siesterMobLogo from "../assets/siester-mobile.svg";
+import comingSoon1 from "../assets/apple-store.jpg";
+import comingSoon2 from "../assets/play-store.jpg";
 
 const SiesterMobile = () => {
   return (
@@ -8,30 +11,46 @@ const SiesterMobile = () => {
       <div className="container">
         <div className="row">
           <div className="col s12">
-            <div className="home-coownership-container">
-              <div className="home-coownership-content">
-                <div className="col s12 m6 l5 offset-l1">
-                  <div className="home-coownership-text">
+            <div className="siester-mobile-container">
+              <div className="siester-mobile-content">
+                <div className="col s12 m6 l5">
+                  <div className="siester-mobile-text">
+                    <div className="siester-mobile-header">
+                      <img src={siesterMobLogo} alt="siester mobile text" />
+                    </div>
                     <p>
-                      Own a home in Lekki and its environs, or at least part of
-                      one from just N1,000,000, and have it generate for you a
-                      quarter of its value in rent, FOREVER.
+                      Siester is your trusted source for affordable spaces in
+                      Lagos. Our portfolio of office spaces combines a
+                      comprehensive selection of professionally furnished spaces
+                      for rent. That means you have a lot of great options to
+                      choose from. We have a location perfect for your every
+                      business need. With Siester you’ll enjoy an easy leasing
+                      experience with expert property management.
                     </p>
-                    <p>
-                      The average value of rent in a 40 Million Naira Lekki home
-                      is N3-4Million per year. For short rentals? That rental
-                      value goes up to N12Million per year, and this is based on
-                      occupancy at only 65% of the time.
-                    </p>
-                    <p>
-                      When you co-own a home, it is yours forever. Generating
-                      revenue for you perpetually.
-                    </p>
+                    <div>
+                      <div>
+                        <h4>Features:</h4>
+                      </div>
+
+                      <ol>
+                        <li>Affordable space</li>
+                        <li>Expert property management</li>
+                        <li>Long-term office rentals</li>
+                      </ol>
+                    </div>
+                    <div className="mobile-app">
+                      <div className="app">
+                        <img src={comingSoon1} alt="comming soon" />
+                      </div>
+                      <div className="app">
+                        <img src={comingSoon2} alt="comming soon" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="col s12 m6 l6">
-                  <div className="home-coownership-img-div">
-                    <img src={siesterPhone} alt="classic-home" />
+                <div className="col s12 m6 l6 offset-l1">
+                  <div className="siester-mobile-img-div">
+                    <img src={siesterPhone} alt="siester phone" />
                   </div>
                 </div>
               </div>

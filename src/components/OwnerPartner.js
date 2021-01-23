@@ -6,12 +6,12 @@ import homeThree from "../assets/home-3.jpg";
 
 const OwnerPartner = () => {
   return (
-    <section id="available-space">
+    <section id="owner-partner">
       <div className="container">
         <div className="row">
           <div className="col s12">
-            <div className="available-spaces-container">
-              <div className="available-header">
+            <div className="owner-partner-container">
+              <div className="owner-header">
                 <h4>
                   <span>Home Owner?</span> Let's partner
                 </h4>
@@ -31,7 +31,7 @@ const OwnerPartner = () => {
                   <img src={homeThree} alt="home interior" />
                 </div>
               </div>
-              <div className="available-info">
+              <div className="owner-info">
                 <p>
                   Do you know the true annual revenue potential of your home?
                   Quick tip. It is worth more than 3x the annual rent. Let us

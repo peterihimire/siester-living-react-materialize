@@ -6,6 +6,7 @@ import AvailableSpace from "./components/AvailableSpace";
 import HomeCoownership from "./components/HomeCoownership";
 import OwnerPartner from "./components/OwnerPartner";
 import SiesterMobile from "./components/SiesterMobile";
+import TourSection from "./components/TourSection";
 
 function App() {
   // For Nav Color
@@ -39,6 +40,7 @@ function App() {
       <HomeCoownership />
       <OwnerPartner />
       <SiesterMobile />
+      <TourSection />
     </>
   );
 }
