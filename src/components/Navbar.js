@@ -132,15 +132,11 @@ const Navbar = (props) => {
             FAQs
           </NavLink>
         </li>
-
-        <NavLink
-          exact
-          activeClassName="active-2"
-          className="btn btn-bigger sidenav-btn"
-          to="/"
-        >
-          book now
-        </NavLink>
+        <div className="sidenav-btn-div">
+          <button className="btn btn-bigger pry-btn sidenav-btn">
+            book now
+          </button>
+        </div>
 
         {/* 
         <li className="nav-item login-style">

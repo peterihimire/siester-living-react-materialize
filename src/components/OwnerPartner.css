@@ -18,6 +18,12 @@ section#owner-partner {
   justify-content: center;
   margin: 0 0 1rem 0;
 }
+.owner-header h4 {
+  color: var(--pri-color);
+}
+.owner-header h4 span{
+  color: var(--sec-color);
+}
 .owner-info{
   /* display: flex;
   justify-content: center; */

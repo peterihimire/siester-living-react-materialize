@@ -166,19 +166,7 @@ h4 {
   color: var(--pri-color);
 }
 .btn {
-  /* background-color: var(--pri-color) !important;
-  color: var(--main-white) !important;
-  text-transform: uppercase !important;
-  box-shadow: none !important;
-  width: 80px;
-  padding: 0 0 !important;
-  font-size: 0.8rem !important;
-  height: 32px !important;
-  line-height: 32px !important; */
-
   cursor: pointer;
-  width: 160px !important;
-  height: 50px !important;
   font-size: 13px !important;
   color: var(--sec-color) !important;
   background: transparent !important;
@@ -187,13 +175,9 @@ h4 {
   margin: 25px 0 10px !important;
   box-shadow: none !important;
   font-family: var(--font) !important;
+  width: 180px !important;
+  height: 60px !important;
 }
-/* .btn-bigger {
-  height: 38px !important;
-  line-height: 38px !important;
-  padding: 0 0rem !important;
-  width: 160px;
-} */
 
 @media (min-width: 993px) {
   .container {
@@ -202,7 +186,7 @@ h4 {
 }
 @media (max-width: 992px) {
   .btn-full-width {
-    width: 100%;
+    width: 100% !important;
   }
 }
 @media (max-width: 600px) {
@@ -213,9 +197,9 @@ h4 {
     display: block !important;
   }
   .btn-full-width {
-    width: 100%;
+    width: 100% !important;
   }
-  .center-sm {
+  .center-xs {
     text-align: center;
   }
 }

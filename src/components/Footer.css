@@ -3,22 +3,38 @@ footer {
   padding: 3rem 0;
   color: var(--main-white);
 }
-.footer-logo img{
+.footer-logo img {
   width: 15%;
 }
 .footer-content h6 {
   text-transform: uppercase;
+  font-family: var(--font-bold);
 }
-.footer-content ul{
-  font-size: .8rem !important;
+.footer-form h6 {
+  font-family: var(--font-bold);
+}
+.footer-content ul {
+  font-size: 0.8rem !important;
   text-transform: capitalize;
 }
-.footer-content li{
-  padding: .4rem 0;
+.footer-content li {
+  padding: 0.4rem 0;
 }
-
-@media (max-width: 600px){
-  .footer-logo img{
+.footer-content li span{
+  padding: 0 .5rem 0 0;
+}
+.footer-content li span img {
+  width: 13px;
+}
+.footer-btn {
+  margin: 5px 0 10px !important;
+  box-shadow: none !important;
+  font-family: var(--font) !important;
+  /* width: 180px !important; */
+  height: 45px !important;
+}
+@media (max-width: 600px) {
+  .footer-logo img {
     width: 30%;
   }
   .footer-content h6 {

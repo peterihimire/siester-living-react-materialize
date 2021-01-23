@@ -90,6 +90,16 @@ a {
   text-transform: capitalize !important;
   padding: 0 100px !important;
 }
+.sidenav-btn-div{
+  padding: 0 100px;
+}
+.sidenav-btn{
+  margin: 5px 0 0 0px !important;
+  box-shadow: none !important;
+  font-family: var(--font) !important;
+  width: 220px !important;
+  height: 80px !important;
+}
 .sidenav li > a:hover {
   /* background-color: transparent; */
   background-color: none !important;
@@ -142,12 +152,12 @@ a {
   border: 1px solid var(--pri-color);
 }
 .pry-btn {
-  background-color: white;
-  color: var(--pri-color);
-  border: 1px solid white;
+  background-color: white !important;
+  color: var(--pri-color) !important;
+  border: 1px solid white !important;
 }
 .sec-btn {
-  background-color: transparent;
+  background-color: transparent ;
   color: white;
   border: 1px solid white;
 }
@@ -184,6 +194,16 @@ img.menu-icon-img {
     text-transform: capitalize !important;
     padding: 0 50px !important;
   }
+  .sidenav-btn-div{
+    padding: 0 50px;
+  }
+  .sidenav-btn{
+    margin: 5px 0 0 0px !important;
+    box-shadow: none !important;
+    font-family: var(--font) !important;
+    width: 180px !important;
+    height: 60px !important;
+  }
   .sidenav li > a:hover {
     background-color: none !important;
     color: var(--pri-color) !important;
@@ -217,6 +237,16 @@ img.menu-icon-img {
     transition: all 0.5s;
     text-transform: capitalize !important;
     padding: 0 2rem !important;
+  }
+  .sidenav-btn-div{
+    padding: 0 2rem;
+  }
+  .sidenav-btn{
+    margin: 5px 0 0 0px !important;
+    box-shadow: none !important;
+    font-family: var(--font) !important;
+    width: 140px !important;
+    height: 50px !important;
   }
   .sidenav-footer {
     margin: 100px 0 0 0;

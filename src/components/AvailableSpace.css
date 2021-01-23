@@ -29,12 +29,19 @@ section#available-space {
   justify-content: center;
   margin: 0 0 1rem 0;
 }
+.available-header h4 {
+  font-size: 1.8rem !important;
+  color: var(--pri-color) !important;
+}
 .available-info {
   /* display: flex;
   justify-content: center; */
   text-align: center;
 }
-
+.available-info p{
+  font-family: var(--font-bold);
+  color: var(--pri-color) !important;
+}
 @media (max-width: 600px) {
   .space-img img {
     width: 100% !important;

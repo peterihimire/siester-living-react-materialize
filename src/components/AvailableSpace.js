@@ -11,7 +11,7 @@ const AvailableSpace = () => {
         <div className="row">
           <div className="col s12">
             <div className="available-spaces-container">
-              <div className="available-header">
+              <div className="available-header center">
                 <h4>Check out our available space</h4>
               </div>
               <div className="col s12 m4 l4">

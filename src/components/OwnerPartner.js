@@ -11,7 +11,7 @@ const OwnerPartner = () => {
         <div className="row">
           <div className="col s12">
             <div className="owner-partner-container">
-              <div className="owner-header">
+              <div className="owner-header center">
                 <h4>
                   <span>Home Owner?</span> Let's partner
                 </h4>

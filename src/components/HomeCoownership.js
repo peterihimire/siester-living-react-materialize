@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeCoownership.css";
 import homeImg from "../assets/home-img.jpg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const HomeCoownership = () => {
   return (
@@ -9,8 +9,8 @@ const HomeCoownership = () => {
       <div className="container">
         <div className="row">
           <div className="col s12">
-            <div className="home-coownership-container">
-              <h4>
+            <div className="home-coownership-container ">
+              <h4 className="center">
                 Home <span>Co-Ownership</span>{" "}
               </h4>
               <div className="home-coownership-content">
@@ -42,9 +42,7 @@ const HomeCoownership = () => {
 
               <div className="col s12">
                 <div className="home-coownership-btn-div">
-                  <Link to="/" className="btn btn-coownership">
-                    read more
-                  </Link>
+                  <button className="btn btn-coownership">read more</button>
                 </div>
               </div>
             </div>

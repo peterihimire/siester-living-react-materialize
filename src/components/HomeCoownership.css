@@ -18,11 +18,13 @@ section#home-coownership {
   display: flex;
   justify-content: center;
 }
-.btn-coownership {
-}
+
 .home-coownership-container h4 {
   text-align: center;
   padding: 0 0 1rem 0;
+}
+.home-coownership-container h4 span{
+  color: var(--sec-color);
 }
 .home-coownership-text p {
   padding: 0 0 1rem 0;

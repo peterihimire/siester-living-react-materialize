@@ -1,26 +1,31 @@
 import React from "react";
 import "./Footer.css";
 import logoAlt from "../assets/siester-logo-white.svg";
+import phoneIcon from "../assets/phone-icon.svg";
+import mailIcon from "../assets/mail-icon.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className="footer-logo">
-          <Link to="/">
-            <img src={logoAlt} alt="logo alt" />
-          </Link>
+        <div className="row">
+          <div className=" col s12 footer-logo">
+            <Link to="/">
+              <img src={logoAlt} alt="logo alt" />
+            </Link>
+          </div>
         </div>
+
         <div className="row">
           <div className="col s12">
             <div className="col s12 m12 l3 ">
-              <div className="s12 m4  white-text">
+              <div className="s12 m4  white-text footer-form">
                 <h6>Join our mailing list</h6>
                 <form>
                   <input name="email" required />
                   <div className="sub-btn-container">
-                    <button className="btn btn-bigger btn-full-width btn-mailing">
+                    <button className="btn btn-bigger btn-full-width footer-btn pry-btn">
                       submit
                     </button>
                   </div>
@@ -52,8 +57,19 @@ const Footer = () => {
                   <div className="footer-content">
                     <h6>contact</h6>
                     <ul>
-                      <li>+234 806 0958 134</li>
-                      <li>peterihimire@gmail.com</li>
+                      <li>
+                        <span>
+                          <img src={phoneIcon} alt="phone icon" />
+                        </span>
+                        +234 806 0958 134
+                      </li>
+
+                      <li>
+                        <span>
+                          <img src={mailIcon} alt="phone icon" />
+                        </span>
+                        peterihimire@gmail.com
+                      </li>
                     </ul>
                   </div>
                 </div>
