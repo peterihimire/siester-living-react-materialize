@@ -1,0 +1,38 @@
+section#about {
+  /* background-color: thistle; */
+  padding: 5rem 0;
+}
+
+.space-img {
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.space-img img {
+  width: 95%;
+  /* height: 300px; */
+}
+
+.about-header {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+}
+.about-header h4 {
+  font-size: 2.5rem !important;
+  color: var(--pri-color) !important;
+}
+.about-info {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+.about-info p {
+  font-family: var(--font-bold);
+  color: var(--pri-color) !important;
+}
+@media (max-width: 600px) {
+  .space-img img {
+    width: 100% !important;
+  }
+}

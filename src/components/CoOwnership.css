@@ -1,0 +1,44 @@
+section#coownership {
+  /* background-color: var(--pri-color); */
+  color: var(--main-black);
+  padding: 5rem 0;
+  /* position: relative; */
+}
+.coownership-img-div {
+  width: 100%;
+}
+.coownership-img-div img {
+  width: 100%;
+}
+.coownership-header {
+  display: flex;
+  justify-content: center;
+}
+.coownership-btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+.coownership-container h4 {
+  text-align: center;
+  padding: 0 0 1rem 0;
+  color: var(--pri-color)
+}
+.coownership-container h4 span {
+  color: var(--sec-color);
+}
+.coownership-text p {
+  padding: 0 0 1rem 0;
+}
+@media (min-width: 601px) {
+}
+@media (max-width: 600px) {
+  .coownership-img-div {
+    width: 100%;
+    padding: 0 0 2rem 0;
+  }
+  .coownership-text p {
+    padding: 0 0 1rem 0;
+    text-align: center;
+  }
+}

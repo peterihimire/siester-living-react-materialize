@@ -117,7 +117,7 @@ const Navbar = (props) => {
             exact
             activeClassName="active-2"
             className="navbar-single-link-2"
-            to="/about"
+            to="/co-ownership"
           >
             co-ownership
           </NavLink>

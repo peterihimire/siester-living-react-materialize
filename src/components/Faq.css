@@ -1,0 +1,91 @@
+.faq {
+  padding: 4rem 0;
+}
+.faq-header {
+  padding: 0 0 2rem 0;
+}
+.faq-header h4 {
+  color: var(--sec-color);
+  font-family: var(--font-bold);
+  font-size: 2.3rem;
+}
+.faq-header span {
+  color: var(--pri-color);
+}
+
+.answer {
+  color: var(--main-black) !important;
+  /* font-family: lato; */
+}
+/* Tablet */
+@media (max-width: 992px) {
+  .faq {
+    position: relative;
+    padding-top: 10%;
+  }
+}
+/* Phone */
+@media (max-width: 600px) {
+  .faq {
+    position: relative;
+    padding-top: 30%;
+  }
+  .faq-header h4 {
+    color: var(--pri-color);
+    font-family: var(--font-bold);
+    /* font-size: 1.5rem; */
+  }
+}
+hr {
+  margin: 5rem 0 3rem 0;
+}
+.collapsible {
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  box-shadow: none !important;
+  margin: 0.5rem 0 1rem 0;
+}
+.collapsible-header h5 {
+  font-size: 1.4rem;
+  color: var(--sec-color);
+  font-family: var(--font-bold) !important;
+}
+.collapsible-header i.material-icons.add-icon,
+.collapsible-header i.material-icons.remove-icon {
+  position: absolute;
+  right: 5px;
+  margin-right: 0;
+  top: 17px;
+  font-weight: 100;
+  font-size: 20px;
+}
+.collapsible-body {
+  padding: 0.3rem 1rem;
+  background-color: #f4f4f5;
+  /* font-size: 14px; */
+}
+.collapsible i {
+  color: var(--pri-color);
+}
+.question {
+  display: inline-block;
+  padding: 0 25px;
+  color: var(--pri-color) !important;
+  font-family: var(--font-bold);
+}
+.collapsible-header .remove-icon {
+  display: none;
+}
+li.active .collapsible-header .remove-icon {
+  display: initial;
+}
+li.active .collapsible-header .add-icon {
+  display: none;
+}
+i.material-icons.disc-icon {
+  position: absolute;
+  top: 19px;
+  left: 2px;
+  font-size: 1rem;
+}
