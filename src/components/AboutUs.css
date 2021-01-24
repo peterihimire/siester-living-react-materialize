@@ -1,6 +1,8 @@
 section#about {
   /* background-color: thistle; */
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
+  position: relative;
+  padding-top: 6%;
 }
 
 .space-img {

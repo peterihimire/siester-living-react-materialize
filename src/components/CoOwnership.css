@@ -1,8 +1,8 @@
 section#coownership {
   /* background-color: var(--pri-color); */
   color: var(--main-black);
-  padding: 5rem 0;
-  /* position: relative; */
+  position: relative;
+  padding-top: 6%;
 }
 .coownership-img-div {
   width: 100%;

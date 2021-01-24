@@ -1,5 +1,7 @@
 .faq {
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
+  position: relative;
+  padding-top: 6%;
 }
 .faq-header {
   padding: 0 0 2rem 0;
@@ -10,7 +12,7 @@
   font-size: 2.3rem;
 }
 .faq-header span {
-  color: var(--pri-color);
+  color: var(--pri-color) !important;
 }
 
 .answer {
@@ -28,12 +30,7 @@
 @media (max-width: 600px) {
   .faq {
     position: relative;
-    padding-top: 30%;
-  }
-  .faq-header h4 {
-    color: var(--pri-color);
-    font-family: var(--font-bold);
-    /* font-size: 1.5rem; */
+    padding-top: 20%;
   }
 }
 hr {
