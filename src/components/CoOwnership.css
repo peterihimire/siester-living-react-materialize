@@ -22,7 +22,7 @@ section#coownership {
 .coownership-container h4 {
   text-align: center;
   padding: 0 0 1rem 0;
-  color: var(--pri-color)
+  color: var(--pri-color);
 }
 .coownership-container h4 span {
   color: var(--sec-color);
@@ -33,6 +33,11 @@ section#coownership {
 @media (min-width: 601px) {
 }
 @media (max-width: 600px) {
+  section#coownership {
+    color: var(--main-black);
+    position: relative;
+    padding-top: 20%;
+  }
   .coownership-img-div {
     width: 100%;
     padding: 0 0 2rem 0;

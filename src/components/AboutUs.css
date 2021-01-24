@@ -34,6 +34,10 @@ section#about {
   color: var(--pri-color) !important;
 }
 @media (max-width: 600px) {
+  section#about {
+    position: relative;
+    padding-top: 20%;
+  }
   .space-img img {
     width: 100% !important;
   }
