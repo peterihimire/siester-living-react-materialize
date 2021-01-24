@@ -3,6 +3,8 @@ import "./Footer.css";
 import logoAlt from "../assets/siester-logo-white.svg";
 import phoneIcon from "../assets/phone-icon.svg";
 import mailIcon from "../assets/mail-icon.svg";
+import instaIcon from "../assets/instagram.svg";
+import fbIcon from "../assets/facebook.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -77,8 +79,18 @@ const Footer = () => {
                   <div className="footer-content">
                     <h6>follow us</h6>
                     <ul>
-                      <li>FAQs</li>
-                      <li>terms and conditions</li>
+                      <li>
+                        <img
+                          src={instaIcon}
+                          alt="phone icon"
+                          className="insta-icon"
+                        />
+                        <img
+                          src={fbIcon}
+                          alt="phone icon"
+                          className="fb-icon"
+                        />
+                      </li>
                     </ul>
                   </div>
                 </div>
