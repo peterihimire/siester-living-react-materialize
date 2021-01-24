@@ -39,6 +39,13 @@ a.brand-logo img {
   position: relative;
   top: 20px;
 }
+nav .sidenav-trigger {
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 56px;
+  margin: 0 0 0 18px !important;
+}
 a.sidenav-trigger.sec-color.right {
   position: relative;
   top: 5px;
@@ -90,10 +97,10 @@ a {
   text-transform: capitalize !important;
   padding: 0 100px !important;
 }
-.sidenav-btn-div{
+.sidenav-btn-div {
   padding: 0 100px;
 }
-.sidenav-btn{
+.sidenav-btn {
   margin: 5px 0 0 0px !important;
   box-shadow: none !important;
   font-family: var(--font) !important;
@@ -157,7 +164,7 @@ a {
   border: 1px solid white !important;
 }
 .sec-btn {
-  background-color: transparent ;
+  background-color: transparent;
   color: white;
   border: 1px solid white;
 }
@@ -194,10 +201,10 @@ img.menu-icon-img {
     text-transform: capitalize !important;
     padding: 0 50px !important;
   }
-  .sidenav-btn-div{
+  .sidenav-btn-div {
     padding: 0 50px;
   }
-  .sidenav-btn{
+  .sidenav-btn {
     margin: 5px 0 0 0px !important;
     box-shadow: none !important;
     font-family: var(--font) !important;
@@ -238,10 +245,10 @@ img.menu-icon-img {
     text-transform: capitalize !important;
     padding: 0 2rem !important;
   }
-  .sidenav-btn-div{
+  .sidenav-btn-div {
     padding: 0 2rem;
   }
-  .sidenav-btn{
+  .sidenav-btn {
     margin: 5px 0 0 0px !important;
     box-shadow: none !important;
     font-family: var(--font) !important;
@@ -255,7 +262,7 @@ img.menu-icon-img {
   .sidenav-logo img {
     width: 120px;
   }
-  .sidenav-footer-text p{
-    font-size: .7rem;
+  .sidenav-footer-text p {
+    font-size: 0.7rem;
   }
 }
