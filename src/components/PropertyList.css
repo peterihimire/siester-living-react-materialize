@@ -1,0 +1,18 @@
+/* .customer-stories {
+  padding: 5rem 2rem;
+} */
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-row-gap: 3rem;
+  grid-column-gap: 4rem;
+}
+section#propertylist-section{
+  padding: 2rem;
+}
+#propertylist-section h5{
+font-size: 1.7rem;
+padding: 0 0 2rem 0;
+font-family: var(--font-bold);
+}

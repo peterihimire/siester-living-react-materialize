@@ -29,6 +29,9 @@ section#about {
   justify-content: center; */
   text-align: center;
 }
+.about p{
+  padding: 0 0 2rem 0;
+}
 .about-info p {
   font-family: var(--font-bold);
   color: var(--pri-color) !important;

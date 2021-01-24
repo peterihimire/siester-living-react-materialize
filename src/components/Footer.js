@@ -25,7 +25,7 @@ const Footer = () => {
               <div className="s12 m4  white-text footer-form">
                 <h6>Join our mailing list</h6>
                 <form>
-                  <input name="email" required />
+                  <input name="email" required placeholder="Enter your email" />
                   <div className="sub-btn-container">
                     <button className="btn btn-bigger btn-full-width footer-btn pry-btn">
                       submit
