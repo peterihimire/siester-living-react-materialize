@@ -13,7 +13,10 @@ const Property = ({ story }) => {
           <div className="property-img-container">
             <img src={image[0]} alt="property" className="property-img" />
           </div>
-          <p>{name}</p>
+          <div className="name-div">
+            <p>{name}</p>
+          </div>
+
           <div className="property-location">
             <img src={mapMarker} alt="map" />
             <span>{location}</span>

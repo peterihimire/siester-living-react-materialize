@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 // import logo from "../assets/logo.svg";
 // import logoAlt from "../assets/logo-alt.svg";
-// import x from "../assets/x.svg";
+import modalClose from "../assets/p-modal-close.svg";
 import "./Modal.css";
 
 class Modal extends Component {
@@ -47,7 +47,10 @@ class Modal extends Component {
           id="modal-select"
           className="modal"
         >
-          <div className="modal-content">
+          <div className="modal-content modal-close">
+            <div className="modal-close-div">
+              <img src={modalClose} alt="modal close" className="modal-close" />
+            </div>
             <div className="my-lightbox">
               <div className="">
                 <div className="big-img">

@@ -4,30 +4,36 @@
 .property-img {
   width: 100% !important;
 }
+
 .property-wrapper p {
   font-size: 1.1rem;
   font-family: var(--font-bold) !important;
 }
-.property-location{
+.property-location {
   display: flex;
   /* justify-content: center; */
   align-items: center;
   text-transform: capitalize;
-
 }
-.property-location span{
-  padding: 0 0 0 .5rem;
+.property-location span {
+  padding: 0 0 0 0.5rem;
 }
-.property-location img{
+.property-location img {
   width: 15px;
 }
-.property-btn{
+.property-btn {
   height: 40px !important;
   width: 140px !important;
   margin: 10px 0 0px !important;
 }
+.name-div{
+  height: 50px;
+}
 @media (max-width: 600px) {
   .property-img-container {
     width: 100% !important;
+  }
+  .name-div{
+    height: 30px;
   }
 }
