@@ -36,6 +36,8 @@ class Modal extends Component {
   }
   render() {
     console.log(this.props);
+    const { imgs, amt, nm, lc, dt } = this.props;
+    console.log(imgs, amt, nm);
     return (
       <>
         <div
@@ -47,10 +49,22 @@ class Modal extends Component {
         >
           <div className="modal-content">
             <div className="my-lightbox">
-              <div className="big-img">
-                {/* <img src={} alt="main-big" /> */}
+              <div className="">
+                <div className="big-img">
+                  <img src={imgs[0]} alt="main-big" />
+                </div>
+                <div className="small-img">
+                  {imgs.map((img) => (
+                    <img src={img} alt="img array" />
+                  ))}
+                </div>
               </div>
-              <div className="small-img">{}</div>
+            </div>
+            <div className="modal-text">
+              <h4>{nm}</h4>
+              <p>{lc}</p>
+              <p>{dt}</p>
+              <p>{amt}</p>
             </div>
           </div>
         </div>

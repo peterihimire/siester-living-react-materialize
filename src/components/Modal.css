@@ -8,5 +8,24 @@
   /* background-color: #394580ab !important; */
 }
 .modal-content {
-  padding: 8rem 10rem  !important;
+  padding: 8rem 10rem !important;
+  width:  60%;
+  margin: 0 auto;
+}
+.big-img {
+  width: 100%;
+  padding: 0 0 1.5rem 0;
+}
+.big-img img {
+  width: 100%;
+}
+
+.small-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1.5rem;
+}
+.small-img img {
+  width: 100%;
 }

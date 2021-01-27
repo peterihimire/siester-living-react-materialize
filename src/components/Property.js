@@ -5,7 +5,7 @@ import ModalSelect from "./Modal";
 
 const Property = ({ story }) => {
   console.log(story);
-  const { name, location, amount, completion, image } = story;
+  const { name, location, amount, completion, image, detail, id } = story;
   return (
     <>
       <article>
@@ -23,11 +23,18 @@ const Property = ({ story }) => {
           <button className="btn property-btn ">
             <a href="#modal-select" className="modal-trigger">
               select
-            </a>{" "}
+            </a>
           </button>
         </div>
       </article>
-      <ModalSelect imgs={image} />
+      <ModalSelect
+        imgs={image}
+        amt={amount}
+        nm={name}
+        lc={location}
+        dt={detail}
+        id={id}
+      />
     </>
   );
 };
