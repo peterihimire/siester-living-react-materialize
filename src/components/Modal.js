@@ -35,6 +35,7 @@ class Modal extends Component {
     // instance.destroy();
   }
   render() {
+    console.log(this.props);
     return (
       <>
         <div
@@ -45,7 +46,12 @@ class Modal extends Component {
           className="modal"
         >
           <div className="modal-content">
-            <h3>This is the modal</h3>
+            <div className="my-lightbox">
+              <div className="big-img">
+                {/* <img src={} alt="main-big" /> */}
+              </div>
+              <div className="small-img">{}</div>
+            </div>
           </div>
         </div>
       </>

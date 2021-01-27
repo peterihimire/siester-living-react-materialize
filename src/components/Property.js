@@ -27,7 +27,7 @@ const Property = ({ story }) => {
           </button>
         </div>
       </article>
-      <ModalSelect />
+      <ModalSelect imgs={image} />
     </>
   );
 };

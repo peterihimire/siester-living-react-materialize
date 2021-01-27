@@ -1,0 +1,12 @@
+.modal {
+  width: 100% !important;
+  height: 100vh !important;
+  max-height: initial !important;
+  top: 0 !important;
+  background-color: #061f35ba !important;
+  color: var(--main-white) !important;
+  /* background-color: #394580ab !important; */
+}
+.modal-content {
+  padding: 8rem 10rem  !important;
+}
