@@ -45,12 +45,13 @@ class Modal extends Component {
             this.Modal = Modal;
           }}
           id="modal-select"
-          className="modal"
+          className="modal "
         >
-          <div className="modal-content modal-close">
+          <div className="modal-content ">
             <div className="modal-close-div">
               <img src={modalClose} alt="modal close" className="modal-close" />
             </div>
+
             <div className="my-lightbox">
               <div className="">
                 <div className="big-img">
@@ -65,9 +66,9 @@ class Modal extends Component {
             </div>
             <div className="modal-text">
               <h4>{nm}</h4>
-              <p>{lc}</p>
+              <p className="lc">{lc}</p>
               <p>{dt}</p>
-              <p>{amt}</p>
+              <p className="amt">₦{amt}</p>
             </div>
           </div>
         </div>

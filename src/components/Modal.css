@@ -14,7 +14,7 @@
   padding: 2rem 0;
 }
 .modal-content {
-  padding: 8rem 10rem !important;
+  padding: 2rem 10rem !important;
   width: 70%;
   margin: 0 auto;
 }
@@ -28,7 +28,7 @@
 
 .small-img {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
 }
@@ -37,14 +37,14 @@
 }
 @media (max-width: 992px) {
   .modal-content {
-    padding: 4rem 8rem !important;
+    padding: 2rem 8rem !important;
     width: 100%;
     margin: 0 auto;
   }
 }
 @media (max-width: 600px) {
   .modal-content {
-    padding: 4rem 2rem !important;
+    padding: 1rem 2rem !important;
     width: 100%;
     margin: 0 auto;
   }

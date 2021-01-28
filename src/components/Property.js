@@ -23,11 +23,14 @@ const Property = ({ story }) => {
           </div>
           <p> ₦ {amount}</p>
           <div className="">investment competition {completion}</div>
-          <button className="btn property-btn ">
-            <a href="#modal-select" className="modal-trigger">
-              select
-            </a>
-          </button>
+
+          <a
+            href="#modal-select"
+            className="modal-trigger btn property-btn"
+            width="100%"
+          >
+            select
+          </a>
         </div>
       </article>
       <ModalSelect
