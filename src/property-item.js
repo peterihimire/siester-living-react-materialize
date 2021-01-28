@@ -15,6 +15,7 @@ let PROPERTY;
 PROPERTY = [
   {
     id: 1,
+    slug: "property-1",
     name: "fully furnished 3-bedroom terraced duplex",
     location: "abijo, lekki",
     amount: "50 million",
@@ -25,6 +26,7 @@ PROPERTY = [
   },
   {
     id: 2,
+    slug: "property-2",
     name: "fully furnished  terraced duplex",
     location: "chevron, lekki",
     amount: "60 million",
@@ -35,6 +37,7 @@ PROPERTY = [
   },
   {
     id: 3,
+    slug: "property-3",
     name: "fully furnished 4-bedroom terraced duplex",
     location: "ikota, lekki",
     amount: "54 million",
@@ -45,6 +48,7 @@ PROPERTY = [
   },
   {
     id: 4,
+    slug: "property-4",
     name: "fully furnished semi-detached duplex",
     location: "free trade zone, lekki",
     amount: "50 million",
@@ -55,6 +59,7 @@ PROPERTY = [
   },
   {
     id: 5,
+    slug: "property-5",
     name: "fully furnished 4-bedroom terraced duplex",
     location: "2nd toll gate, lekki",
     amount: "50 million",
@@ -65,6 +70,7 @@ PROPERTY = [
   },
   {
     id: 6,
+    slug: "property-6",
     name: "fully furnished 4-bedroom semi-detached duplex",
     location: "phase 2, lekki",
     amount: "50 million",
@@ -75,6 +81,7 @@ PROPERTY = [
   },
   {
     id: 7,
+    slug: "property-7",
     name: "fully furnished 4-bedroom semi-detached duplex",
     location: "ikota, lekki",
     amount: "60 million",
@@ -85,6 +92,7 @@ PROPERTY = [
   },
   {
     id: 8,
+    slug: "property-8",
     name: "fully furnished 4-bedroom terraced duplex",
     location: "ikota, lekki",
     amount: "50 million",
@@ -95,6 +103,7 @@ PROPERTY = [
   },
   {
     id: 9,
+    slug: "property-9",
     name: "fully furnished terraced duplex",
     location: "agungi, lekki",
     amount: "58 million",

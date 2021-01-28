@@ -90,7 +90,7 @@ const Banner = () => {
                   <br className="hidden-xs" />a day or more
                 </h1>
 
-                <div class="home-btn-wrapper">
+                <div className="home-btn-wrapper">
                   <button
                     className="modal-trigger home-banner-btn"
                     data-target="book-now"
@@ -117,8 +117,8 @@ const Banner = () => {
               className="home-abs-img visible-xs"
             />
             <div className="container">
-              <div class="main-txt-wrapper col s12 m10 l4 center-xs">
-                <h1 class="banner-title pri-color">
+              <div className="main-txt-wrapper col s12 m10 l4 center-xs">
+                <h1 className="banner-title pri-color">
                   <span className="sec-color">Need a place to throw</span>{" "}
                   <br className="hidden-xs" />a house party?
                 </h1>
