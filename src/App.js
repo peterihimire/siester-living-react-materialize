@@ -6,31 +6,41 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import FaqPage from "./pages/FaqPage";
 import CoOwnershipPage from "./pages/CoOwnershipPage";
+import DetailPage from "./pages/DetailPage";
+
 import propertyItem from "./property-item";
+// import Property from "./components/Property";
 
 function App() {
   // For Nav Color
   const [navColor, setNavColor] = useState({
     isColor: false,
   });
+
   // For All Products
-  const [productsState, setProductsState] = useState({
-    products: [],
+  // const [properties, setProperties] = useState([]);
+  // With the above syntax of useState([]) , It will only show the value and no key. For example instead of { loading: true } or { properties: Array(0) }, it will only show : true, []
+
+  const [properties, setProperties] = useState({
+    properties: [],
   });
-  // // For All Products
-  // const [products, setProducts] = useState([]);
-  // For Modal Product
-  const [modalProductState, setModalProductState] = useState({
-    modalProduct: {},
-  });
-  // For Detail Product
-  const [productDetailState, setProductDetailState] = useState({
-    productDetail: [],
-  });
+
+  // // For Modal Product
+  // const [modalProperty, setModalProperty] = useState({
+  //   modalProperty: {},
+  // });
+
+  // // For Detail Product
+  // const [propertyDetail, setPropertyDetail] = useState({
+  //   propertyDetail: [],
+  // });
+
   // For Loading
-  const [loadingState, setLoadingState] = useState({
-    loading: false,
+  const [loading, setLoading] = useState({
+    loading: true,
   });
+  // const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     document.addEventListener("scroll", () => {
       console.log(window.scrollY);
@@ -49,16 +59,34 @@ function App() {
     });
   }, []);
 
-  // const getData = () => {
-  //   setProducts({ products: propertyItem });
-  // };
+  // To get all the properties
   const getData = () => {
-    setProductsState({ products: propertyItem });
+    setProperties({ properties: propertyItem });
+    setLoading({ loading: false });
   };
+
+  // To get a single property
+  const getSingleProperty = (slug) => {
+    let myProperties = properties.properties;
+    // const singleProperty = myProperties.find(
+    //   (property) => property.slug === slug
+    //   // console.log(property)
+    // );
+    // return singleProperty;
+
+    properties.properties.filter((property) => {
+      console.log(property);
+      return property.slug !== slug;
+    });
+    console.log(myProperties);
+  };
+
+  //
+
   useEffect(() => {
     getData();
-    // console.log(products);
-    console.log(productsState.products);
+    getSingleProperty();
+    // console.log(loading, properties);
   }, []);
 
   return (
@@ -69,9 +97,18 @@ function App() {
         <Route path="/about" component={AboutPage} />
         <Route path="/faq" component={FaqPage} />
         <Route path="/co-ownership" component={CoOwnershipPage} />
+        <Route path="/detail/:slug" component={DetailPage} />
       </Switch>
     </>
   );
 }
 
 export default App;
+
+// // For All Products
+// const [productsState, setProductsState] = useState({
+//   properties: [],
+// });
+// const getData = () => {
+//   setProductsState({ products: propertyItem });
+// };

@@ -2,17 +2,21 @@ import React from "react";
 import "./Property.css";
 import mapMarker from "../assets/location.svg";
 import ModalSelect from "./Modal";
+import { Link } from "react-router-dom";
 
 const Property = ({ story }) => {
   console.log(story);
-  const { name, location, amount, completion, image, detail, id } = story;
+  const { name, location, amount, completion, image, detail, id ,slug} = story;
   return (
     <>
       <article>
         <div className="property-wrapper">
-          <div className="property-img-container">
-            <img src={image[0]} alt="property" className="property-img" />
-          </div>
+          <Link to={`/detail/${slug}`}>
+            <div className="property-img-container">
+              <img src={image[0]} alt="property" className="property-img" />
+            </div>
+          </Link>
+
           <div className="name-div">
             <p>{name}</p>
           </div>
