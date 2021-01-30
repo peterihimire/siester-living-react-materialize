@@ -1,0 +1,2 @@
+export const GET_DATA = "GET_DATA";
+export const GET_SINGLE_PROPERTY = "GET_SINGLE_PROPERTY";

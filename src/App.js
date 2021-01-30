@@ -8,7 +8,7 @@ import FaqPage from "./pages/FaqPage";
 import CoOwnershipPage from "./pages/CoOwnershipPage";
 import DetailPage from "./pages/DetailPage";
 
-import propertyItem from "./property-item";
+// import propertyItem from "./property-item";
 // import Property from "./components/Property";
 
 function App() {
@@ -21,9 +21,9 @@ function App() {
   // const [properties, setProperties] = useState([]);
   // With the above syntax of useState([]) , It will only show the value and no key. For example instead of { loading: true } or { properties: Array(0) }, it will only show : true, []
 
-  const [properties, setProperties] = useState({
-    properties: [],
-  });
+  // const [properties, setProperties] = useState({
+  //   properties: [],
+  // });
 
   // // For Modal Product
   // const [modalProperty, setModalProperty] = useState({
@@ -35,10 +35,10 @@ function App() {
   //   propertyDetail: [],
   // });
 
-  // For Loading
-  const [loading, setLoading] = useState({
-    loading: true,
-  });
+  // // For Loading
+  // const [loading, setLoading] = useState({
+  //   loading: true,
+  // });
   // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -59,35 +59,31 @@ function App() {
     });
   }, []);
 
-  // To get all the properties
-  const getData = () => {
-    setProperties({ properties: propertyItem });
-    setLoading({ loading: false });
-  };
+  // // To get all the properties
+  // const getData = () => {
+  //   setProperties({ properties: propertyItem });
+  //   setLoading({ loading: false });
+  // };
 
-  // To get a single property
-  const getSingleProperty = (slug) => {
-    let myProperties = properties.properties;
-    // const singleProperty = myProperties.find(
-    //   (property) => property.slug === slug
-    //   // console.log(property)
-    // );
-    // return singleProperty;
+  // // To get a single property
+  // const getSingleProperty = (slug) => {
+  //   let myProperties = properties.properties;
+  //   // const singleProperty = myProperties.find(
+  //   //   (property) => property.slug === slug
+  //   //   // console.log(property)
+  //   // );
+  //   // return singleProperty;
 
-    properties.properties.filter((property) => {
-      console.log(property);
-      return property.slug !== slug;
-    });
-    console.log(myProperties);
-  };
+  //   console.log(myProperties);
+  // };
 
-  //
+  // //
 
-  useEffect(() => {
-    getData();
-    getSingleProperty();
-    // console.log(loading, properties);
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  //   getSingleProperty();
+  //   // console.log(loading, properties);
+  // }, []);
 
   return (
     <>

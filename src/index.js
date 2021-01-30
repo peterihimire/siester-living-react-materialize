@@ -5,11 +5,25 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "materialize-css/dist/css/materialize.min.css";
 import { BrowserRouter as Router } from "react-router-dom";
+// import { createStore } from "redux";
+// import { Provider } from "react-redux";
+// import propertyItem from "./property-item";
+// import reducer from "./reducer";
+import { PropertyProvider } from "./context";
+
+// const initialStore = {
+//   properties: [],
+// };
+// const myStore = createStore(reducer, initialStore);
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <PropertyProvider>
+        {/* <Provider store={myStore}> */}
+        <App />
+        {/* </Provider> */}
+      </PropertyProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
