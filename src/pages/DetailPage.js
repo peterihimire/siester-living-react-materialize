@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect,  } from "react";
 import Detail from "../components/Detail";
 import Footer from "../components/Footer";
 
@@ -43,6 +43,7 @@ const DetailPage = (props) => {
 
   const property = getSingleProperty(slugState.slug);
   console.log(property);
+  console.log(setSlugState)
 
   useEffect(() => {
     getData();
