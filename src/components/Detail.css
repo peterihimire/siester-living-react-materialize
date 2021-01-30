@@ -14,7 +14,7 @@
   padding: 2rem 0;
 }
 .detail-content {
-  padding: 2rem 10rem !important;
+  padding: 10rem 10rem 6rem 10rem !important;
   width: 70%;
   margin: 0 auto;
 }
@@ -37,14 +37,14 @@
 }
 @media (max-width: 992px) {
   .detail-content {
-    padding: 2rem 8rem !important;
+    padding: 10rem 8rem 6rem 8rem !important;
     width: 100%;
     margin: 0 auto;
   }
 }
 @media (max-width: 600px) {
   .detail-content {
-    padding: 1rem 2rem !important;
+    padding: 8rem 2rem 4rem 2rem !important;
     width: 100%;
     margin: 0 auto;
   }

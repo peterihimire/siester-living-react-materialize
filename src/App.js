@@ -8,38 +8,11 @@ import FaqPage from "./pages/FaqPage";
 import CoOwnershipPage from "./pages/CoOwnershipPage";
 import DetailPage from "./pages/DetailPage";
 
-// import propertyItem from "./property-item";
-// import Property from "./components/Property";
-
 function App() {
   // For Nav Color
   const [navColor, setNavColor] = useState({
     isColor: false,
   });
-
-  // For All Products
-  // const [properties, setProperties] = useState([]);
-  // With the above syntax of useState([]) , It will only show the value and no key. For example instead of { loading: true } or { properties: Array(0) }, it will only show : true, []
-
-  // const [properties, setProperties] = useState({
-  //   properties: [],
-  // });
-
-  // // For Modal Product
-  // const [modalProperty, setModalProperty] = useState({
-  //   modalProperty: {},
-  // });
-
-  // // For Detail Product
-  // const [propertyDetail, setPropertyDetail] = useState({
-  //   propertyDetail: [],
-  // });
-
-  // // For Loading
-  // const [loading, setLoading] = useState({
-  //   loading: true,
-  // });
-  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -59,32 +32,6 @@ function App() {
     });
   }, []);
 
-  // // To get all the properties
-  // const getData = () => {
-  //   setProperties({ properties: propertyItem });
-  //   setLoading({ loading: false });
-  // };
-
-  // // To get a single property
-  // const getSingleProperty = (slug) => {
-  //   let myProperties = properties.properties;
-  //   // const singleProperty = myProperties.find(
-  //   //   (property) => property.slug === slug
-  //   //   // console.log(property)
-  //   // );
-  //   // return singleProperty;
-
-  //   console.log(myProperties);
-  // };
-
-  // //
-
-  // useEffect(() => {
-  //   getData();
-  //   getSingleProperty();
-  //   // console.log(loading, properties);
-  // }, []);
-
   return (
     <>
       <Navbar defNavColor={navColor.isColor} />
@@ -101,10 +48,54 @@ function App() {
 
 export default App;
 
-// // For All Products
-// const [productsState, setProductsState] = useState({
+// import propertyItem from "./property-item";
+
+// For All Products
+// const [properties, setProperties] = useState([]);
+// With the above syntax of useState([]) , It will only show the value and no key. For example instead of { loading: true } or { properties: Array(0) }, it will only show : true, []
+
+// const [properties, setProperties] = useState({
 //   properties: [],
 // });
+
+// // For Modal Product
+// const [modalProperty, setModalProperty] = useState({
+//   modalProperty: {},
+// });
+
+// // For Detail Product
+// const [propertyDetail, setPropertyDetail] = useState({
+//   propertyDetail: [],
+// });
+
+// // For Loading
+// const [loading, setLoading] = useState({
+//   loading: true,
+// });
+// const [loading, setLoading] = useState(true);
+
+// // To get all the properties
 // const getData = () => {
-//   setProductsState({ products: propertyItem });
+//   setProperties({ properties: propertyItem });
+//   setLoading({ loading: false });
 // };
+
+// // To get a single property
+// const getSingleProperty = (slug) => {
+//   let myProperties = properties.properties;
+//   // const singleProperty = myProperties.find(
+//   //   (property) => property.slug === slug
+//   //   // console.log(property)
+//   // );
+//   // return singleProperty;
+
+//   console.log(myProperties);
+// };
+
+// //
+
+// useEffect(() => {
+//   getData();
+//   getSingleProperty();
+//   // console.log(loading, properties);
+// }, []);

@@ -19,10 +19,8 @@ const Detail = (props) => {
   } = oneProperty;
   console.log(name, location, amount, slug, id, image, detail, completion);
   return (
-    <section>
+    <section className='detail-section'>
       <div className="detail-content ">
-        <h4> This is the detail component</h4>
-
         <div className="my-lightbox">
           <div className="">
             <div className="big-img">

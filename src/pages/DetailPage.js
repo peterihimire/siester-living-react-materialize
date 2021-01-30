@@ -1,55 +1,36 @@
-import React, { useState, useEffect,  } from "react";
+import React from "react";
 import Detail from "../components/Detail";
 import Footer from "../components/Footer";
-
-import propertyItem from "../property-item";
+import { useContext } from "react";
+import { PropertyContext } from "../context";
 
 const DetailPage = (props) => {
+  const context = useContext(PropertyContext);
+  const { properties } = context;
+  console.log(context);
+  console.log(properties);
+
   console.log(props);
   console.log(props.match.params.slug);
-
-  const [properties, setProperties] = useState({
-    properties: [],
-  });
-
-  // // For Loading
-  // const [loading, setLoading] = useState({
-  //   loading: true,
-  // });
 
   const [slugState, setSlugState] = React.useState({
     slug: props.match.params.slug,
   });
 
-  // To get all the properties
-  const getData = () => {
-    setProperties({ properties: propertyItem });
-    // setLoading({ loading: false });
-  };
-
   // To get a single property
   const getSingleProperty = (slug) => {
-    let myProperties = properties.properties;
+    let myProperties = properties;
 
-    const singleP = properties.properties.filter((property) => {
+    const singleP = myProperties.filter((property) => {
       console.log(property);
       return property.slug === slug;
     });
-    console.log(myProperties);
+
     return singleP[0];
   };
-  
-
 
   const property = getSingleProperty(slugState.slug);
-  console.log(property);
-  console.log(setSlugState)
-
-  useEffect(() => {
-    getData();
-    // getSingleProperty();
-    // console.log(loading, properties);
-  }, []);
+  console.log(setSlugState);
 
   return (
     <>
