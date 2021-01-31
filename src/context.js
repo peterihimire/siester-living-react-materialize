@@ -30,6 +30,7 @@ class PropertyProvider extends Component {
     console.log(property);
     return property;
   };
+  
   getModalProperty = (slug) => {
     const modalP = this.getProperty(slug);
     console.log(modalP);
@@ -41,7 +42,11 @@ class PropertyProvider extends Component {
     console.log(this.state);
     return (
       <PropertyContext.Provider
-        value={{ ...this.state, getProperty: this.getProperty }}
+        value={{
+          ...this.state,
+          getProperty: this.getProperty,
+          getModalProperty: this.getModalProperty,
+        }}
       >
         {this.props.children}
       </PropertyContext.Provider>

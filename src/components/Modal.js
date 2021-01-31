@@ -37,7 +37,7 @@ class Modal extends Component {
   render() {
     console.log(this.props);
     const { imgs, amt, nm, lc, dt } = this.props;
-    console.log(imgs, amt, nm);
+    // console.log(imgs, amt, nm);
     return (
       <>
         <div

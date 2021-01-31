@@ -6,9 +6,9 @@ import { PropertyContext } from "../context";
 
 const DetailPage = (props) => {
   const context = useContext(PropertyContext);
-  const { properties } = context;
+  const { properties, getProperty } = context;
   // console.log(context);
-  // console.log(properties);
+  console.log(properties, getProperty);
   // console.log(props);
   // console.log(props.match.params.slug);
 
@@ -16,19 +16,20 @@ const DetailPage = (props) => {
     slug: props.match.params.slug,
   });
 
-  // To get a single property
-  const getSingleProperty = (slug) => {
-    let myProperties = properties;
+  // // To get a single property
+  // const getSingleProperty = (slug) => {
+  //   let myProperties = properties;
 
-    const singleP = myProperties.filter((property) => {
-      // console.log(property);
-      return property.slug === slug;
-    });
+  //   const singleP = myProperties.filter((property) => {
+  //     // console.log(property);
+  //     return property.slug === slug;
+  //   });
 
-    return singleP[0];
-  };
+  //   return singleP[0];
+  // };
 
-  const property = getSingleProperty(slugState.slug);
+  // const property = getSingleProperty(slugState.slug);
+  const property = getProperty(slugState.slug);
   console.log(setSlugState);
 
   return (
