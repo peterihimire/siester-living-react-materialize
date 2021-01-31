@@ -6,7 +6,7 @@ const PropertyContext = React.createContext();
 class PropertyProvider extends Component {
   state = {
     properties: [],
-    propertyDetail: {},
+    property: {},
     modalProperty: {},
     loading: true,
   };
@@ -16,13 +16,26 @@ class PropertyProvider extends Component {
       return { properties: propertyItem, loading: false };
     });
   };
+
   componentDidMount() {
     this.getData();
+    console.log(this.getProperty());
   }
+
+  getProperty = (slug) => {
+    const property = this.state.properties.find((item) => {
+      return item.slug === slug;
+    });
+    console.log(property);
+    return property;
+  };
+
   render() {
     console.log(this.state);
     return (
-      <PropertyContext.Provider value={{ ...this.state }}>
+      <PropertyContext.Provider
+        value={{ ...this.state, getProperty: this.getProperty }}
+      >
         {this.props.children}
       </PropertyContext.Provider>
     );

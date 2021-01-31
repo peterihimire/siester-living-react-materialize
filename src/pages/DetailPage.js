@@ -7,11 +7,10 @@ import { PropertyContext } from "../context";
 const DetailPage = (props) => {
   const context = useContext(PropertyContext);
   const { properties } = context;
-  console.log(context);
-  console.log(properties);
-
-  console.log(props);
-  console.log(props.match.params.slug);
+  // console.log(context);
+  // console.log(properties);
+  // console.log(props);
+  // console.log(props.match.params.slug);
 
   const [slugState, setSlugState] = React.useState({
     slug: props.match.params.slug,
@@ -22,7 +21,7 @@ const DetailPage = (props) => {
     let myProperties = properties;
 
     const singleP = myProperties.filter((property) => {
-      console.log(property);
+      // console.log(property);
       return property.slug === slug;
     });
 

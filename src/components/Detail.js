@@ -3,9 +3,9 @@ import "./Detail.css";
 // import M from "materialize-css/dist/js/materialize.min.js";
 
 const Detail = (props) => {
-  console.log(props);
+  // console.log(props);
   const { oneProperty } = props;
-  console.log(oneProperty);
+  // console.log(oneProperty);
 
   const {
     name,
