@@ -35,9 +35,9 @@ class Modal extends Component {
     // instance.destroy();
   }
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     const { imgs, amt, nm, lc, dt } = this.props;
-    // console.log(imgs, amt, nm);
+    // console.log(imgs, amt, nm, sg);
     return (
       <>
         <div

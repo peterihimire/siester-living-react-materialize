@@ -19,24 +19,25 @@ class PropertyProvider extends Component {
 
   componentDidMount() {
     this.getData();
-    this.getModalProperty();
-    this.getProperty();
+    // this.getModalProperty();
+    // this.getProperty();
   }
 
   getProperty = (slug) => {
     const property = this.state.properties.find((item) => {
+      console.log(slug);
       return item.slug === slug;
     });
     console.log(property);
     return property;
   };
-  
+
   getModalProperty = (slug) => {
     const modalP = this.getProperty(slug);
     console.log(modalP);
-    // this.setState(() => {
-    //   return { modalProperty: modalP };
-    // });
+    this.setState(() => {
+      return { modalProperty: modalP };
+    });
   };
   render() {
     console.log(this.state);

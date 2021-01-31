@@ -5,8 +5,8 @@ import ModalSelect from "./Modal";
 import { Link } from "react-router-dom";
 
 const Property = ({ story }) => {
-  console.log(story);
-  const { name, location, amount, completion, image, detail, id ,slug} = story;
+  // console.log(story);
+  const { name, location, amount, completion, image, detail, id, slug } = story;
   return (
     <>
       <article>
@@ -44,6 +44,7 @@ const Property = ({ story }) => {
         lc={location}
         dt={detail}
         id={id}
+        sg={slug}
       />
     </>
   );
