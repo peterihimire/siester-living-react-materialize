@@ -19,7 +19,8 @@ class PropertyProvider extends Component {
 
   componentDidMount() {
     this.getData();
-    console.log(this.getProperty());
+    this.getModalProperty();
+    this.getProperty();
   }
 
   getProperty = (slug) => {
@@ -29,7 +30,13 @@ class PropertyProvider extends Component {
     console.log(property);
     return property;
   };
-
+  getModalProperty = (slug) => {
+    const modalP = this.getProperty(slug);
+    console.log(modalP);
+    // this.setState(() => {
+    //   return { modalProperty: modalP };
+    // });
+  };
   render() {
     console.log(this.state);
     return (
