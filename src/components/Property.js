@@ -2,7 +2,7 @@ import React from "react";
 import "./Property.css";
 import mapMarker from "../assets/location.svg";
 import ModalSelect from "./Modal";
-import LazySkeleton from "../components/LazySkeleton";
+// import LazySkeleton from "./LazySkeleton";
 import { Link } from "react-router-dom";
 
 const Property = ({ story }) => {
@@ -15,9 +15,7 @@ const Property = ({ story }) => {
         <div className="property-wrapper">
           <Link to={`/detail/${slug}`}>
             <div className="property-img-container card-imag loadin ">
-              <img 
-              src={image[0]} 
-              alt="property" className="property-img " />
+              <img src={image[0]} alt="property" className="property-img " />
             </div>
           </Link>
 

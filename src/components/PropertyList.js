@@ -1,7 +1,9 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "./PropertyList.css";
 import Properties from "../property-item";
-import Property from "../components/Property";
+import LazySkeleton from "./LazySkeleton";
+// import Property from "../components/Property";
+const Property = lazy(() => import("../components/Property"));
 
 const PropertyList = () => {
   console.log(Properties);
@@ -11,7 +13,11 @@ const PropertyList = () => {
         <h5 className="center">Here are some property under consideration</h5>
         <div className="property-grid">
           {Properties.map((property) => (
-            <Property key={property.id} story={property} />
+            <>
+              <Suspense fallback={<LazySkeleton />}>
+                <Property key={property.id} story={property} />
+              </Suspense>
+            </>
           ))}
         </div>
       </div>
