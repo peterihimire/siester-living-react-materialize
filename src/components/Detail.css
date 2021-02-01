@@ -1,6 +1,6 @@
-.modal {
+.detail-sectin {
   width: 100% !important;
-  height: 100vh !important;
+  /* height: 100vh !important; */
   max-height: initial !important;
   top: 0 !important;
   background-color: #061f35ba !important;

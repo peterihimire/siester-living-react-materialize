@@ -2,6 +2,7 @@ import React from "react";
 import "./Property.css";
 import mapMarker from "../assets/location.svg";
 import ModalSelect from "./Modal";
+import LazySkeleton from "../components/LazySkeleton";
 import { Link } from "react-router-dom";
 
 const Property = ({ story }) => {
@@ -9,11 +10,14 @@ const Property = ({ story }) => {
   const { name, location, amount, completion, image, detail, id, slug } = story;
   return (
     <>
+      {/* <LazySkeleton /> */}
       <article>
         <div className="property-wrapper">
           <Link to={`/detail/${slug}`}>
-            <div className="property-img-container">
-              <img src={image[0]} alt="property" className="property-img" />
+            <div className="property-img-container card-imag loadin ">
+              <img 
+              src={image[0]} 
+              alt="property" className="property-img " />
             </div>
           </Link>
 

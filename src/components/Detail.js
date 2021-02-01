@@ -1,6 +1,8 @@
 import React from "react";
 import "./Detail.css";
 // import M from "materialize-css/dist/js/materialize.min.js";
+import modalClose from "../assets/p-modal-close.svg";
+import { Link } from "react-router-dom";
 
 const Detail = (props) => {
   // console.log(props);
@@ -19,8 +21,13 @@ const Detail = (props) => {
   } = oneProperty;
   console.log(name, location, amount, slug, id, image, detail, completion);
   return (
-    <section className='detail-section'>
+    <section className="detail-section">
       <div className="detail-content ">
+        <div className="modal-close-div">
+          <Link to="/co-ownership">
+            <img src={modalClose} alt="modal close" className="" />
+          </Link>
+        </div>
         <div className="my-lightbox">
           <div className="">
             <div className="big-img">
