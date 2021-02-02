@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import "./LazyImg.css";
 import LazySkeleton from "./LazySkeleton";
 
 const LazyImg = ({ className, src, alt, lqip, aspectRatio = 2 / 3, width }) => {
@@ -14,13 +15,13 @@ const LazyImg = ({ className, src, alt, lqip, aspectRatio = 2 / 3, width }) => {
     }
   }, []);
   return (
-    <div>
+    <div className='wrapper'>
       <div
         // style={{ paddingBottom: `${100 / aspectRatio}%` }}
         className=""
       ></div>
-      {/* {lqip && <img src={lqip} alt="" aria-hidden="true" />} */}
-      {lqip && <LazySkeleton />}
+      {lqip && <img src={lqip} alt="" aria-hidden="true" />}
+      {/* {lqip && <LazySkeleton />} */}
 
       <img
         loading="lazy"
@@ -28,7 +29,7 @@ const LazyImg = ({ className, src, alt, lqip, aspectRatio = 2 / 3, width }) => {
         alt={alt}
         ref={imgRef}
         onLoad={() => setLoaded({ loaded: true })}
-        className=""
+        className="lazy-img"
         width={width}
       />
     </div>
