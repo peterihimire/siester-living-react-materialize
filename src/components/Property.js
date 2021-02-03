@@ -2,10 +2,10 @@ import React from "react";
 import "./Property.css";
 import mapMarker from "../assets/location.svg";
 import ModalSelect from "./Modal";
-// import LazySkeleton from "./LazySkeleton";
+import LazySkele from "./LazySkele";
 import { Link } from "react-router-dom";
 import LazyImg from "../components/LazyImg";
-import nodejs from "../assets/nodejs.svg";
+// import nodejs from "../assets/nodejs.svg";
 
 const Property = ({ story }) => {
   // console.log(story);
@@ -25,7 +25,7 @@ const Property = ({ story }) => {
               src={image[0]}
               alt="mansion"
               width="100%"
-              lqip={nodejs}
+              lqip={<LazySkele />}
             />
             {/* </div> */}
           </Link>
