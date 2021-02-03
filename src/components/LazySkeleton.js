@@ -4,13 +4,13 @@ import "./LazySkeleton.css";
 const LazySkeleton = () => {
   return (
     <div className="containe">
-      <section className="card">
+      <article className="skeleton-card">
         <figure className="card-image loading"></figure>
         <div className="card-detail">
           <h3 className="card-title loading" aria-hidden="true"></h3>
           <p className="card-description loading"></p>
         </div>
-      </section>
+      </article>
     </div>
   );
 };

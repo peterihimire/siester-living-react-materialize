@@ -17,17 +17,17 @@ const Property = ({ story }) => {
       <article>
         <div className="property-wrapper">
           <Link to={`/detail/${slug}`}>
-            {/* <div className="property-img-container card-imag loadin "> */}
-            {/* <img src={image[0]} alt="property" className="property-img " /> */}
-            <LazyImg
-              className="demo"
-              // aspectRatio={16 / 10}
-              src={image[0]}
-              alt="mansion"
-              width="100%"
-              lqip={<LazySkele />}
-            />
-            {/* </div> */}
+            <div className="property-img-container card-imag loadin ">
+              {/* <img src={image[0]} alt="property" className="property-img " /> */}
+              <LazyImg
+                className="demo"
+                // aspectRatio={16 / 10}
+                src={image[0]}
+                alt="mansion"
+                width="100%"
+                lqip={<LazySkele />}
+              />
+            </div>
           </Link>
 
           <div className="name-div">
