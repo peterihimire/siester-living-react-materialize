@@ -4,8 +4,8 @@ import mapMarker from "../assets/location.svg";
 import ModalSelect from "./Modal";
 // import LazySkeleton from "./LazySkeleton";
 import { Link } from "react-router-dom";
-// import LazyImg from "../components/LazyImg";
-// import nodejs from "../assets/nodejs.svg";
+import LazyImg from "../components/LazyImg";
+import nodejs from "../assets/nodejs.svg";
 
 const Property = ({ story }) => {
   // console.log(story);
@@ -17,17 +17,17 @@ const Property = ({ story }) => {
       <article>
         <div className="property-wrapper">
           <Link to={`/detail/${slug}`}>
-            <div className="property-img-container card-imag loadin ">
-              <img src={image[0]} alt="property" className="property-img " />
-              {/* <LazyImg
-                className="demo"
-                // aspectRatio={16 / 10}
-                src={image[0]}
-                alt="houses"
-                width="100%"
-                lqip={nodejs}
-              /> */}
-            </div>
+            {/* <div className="property-img-container card-imag loadin "> */}
+            {/* <img src={image[0]} alt="property" className="property-img " /> */}
+            <LazyImg
+              className="demo"
+              // aspectRatio={16 / 10}
+              src={image[0]}
+              alt="mansion"
+              width="100%"
+              lqip={nodejs}
+            />
+            {/* </div> */}
           </Link>
 
           <div className="name-div">

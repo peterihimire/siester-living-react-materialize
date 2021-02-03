@@ -3,19 +3,15 @@ import "./LazyImg.css";
 import LazySkeleton from "./LazySkeleton";
 
 const LazyImg = ({ className, src, alt, lqip, aspectRatio = 2 / 3, width }) => {
-  const [loaded, setLoaded] = useState({
-    loaded: false,
-  });
+  const [loaded, setLoaded] = useState(false);
   const imgRef = useRef();
   useEffect(() => {
     if (imgRef.current && imgRef.current.complete) {
-      setLoaded({
-        loaded: true,
-      });
+      setLoaded(true);
     }
   }, []);
   return (
-    <div className='wrapper'>
+    <div className={className ? "wrapper" : className}>
       <div
         // style={{ paddingBottom: `${100 / aspectRatio}%` }}
         className=""
@@ -28,8 +24,8 @@ const LazyImg = ({ className, src, alt, lqip, aspectRatio = 2 / 3, width }) => {
         src={src}
         alt={alt}
         ref={imgRef}
-        onLoad={() => setLoaded({ loaded: true })}
-        className="lazy-img"
+        onLoad={() => setLoaded(true)}
+        className={loaded ? "loaded lazy-img" : "source lazy-img"}
         width={width}
       />
     </div>
