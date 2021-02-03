@@ -9,6 +9,8 @@ const LazySkeleton = () => {
         <div className="card-detail">
           <h3 className="card-title loading" aria-hidden="true"></h3>
           <p className="card-description loading"></p>
+          <p className="card-description loading"></p>
+          <p className="card-description loading"></p>
         </div>
       </article>
     </div>

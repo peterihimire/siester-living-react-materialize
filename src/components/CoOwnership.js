@@ -1,6 +1,8 @@
 import React from "react";
 import "./CoOwnership.css";
 import homeImg from "../assets/home-img.jpg";
+// import LazyImg from "../components/LazyImg";
+// import LazySkele from "../components/LazySkele";
 
 const CoOwnership = () => {
   return (
@@ -16,6 +18,14 @@ const CoOwnership = () => {
                 <div className="col s12 m6 l6">
                   <div className="coownership-img-div">
                     <img src={homeImg} alt="classic-home" />
+                    {/* <LazyImg
+                      className="demo"
+                      // aspectRatio={16 / 10}
+                      src={homeImg}
+                      alt="mansion"
+                      width="100%"
+                      lqip={<LazySkele />}
+                    /> */}
                   </div>
                 </div>
                 <div className="col s12 m6 l5 offset-l1">

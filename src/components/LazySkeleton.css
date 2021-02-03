@@ -61,9 +61,16 @@ body {
   font-size: 1.5rem;
   margin-bottom: none;
   line-height: 0.09;
+  margin: .6rem 0 0rem 0;
 }
+/* h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.9466666667rem 0 1.168rem 0;
+} */
 .card-detail p {
   line-height: 1.3rem;
+  margin: 1.17rem 0 1.168rem 0;
 }
 
 .card-image {
@@ -126,7 +133,7 @@ body {
 }
 
 .card-title.loading {
-  height: 1.8rem;
+  height: 3.0rem;
 }
 
 .card-image.image {
@@ -135,5 +142,6 @@ body {
 }
 
 .card-description.loading {
-  height: 80px;
+  height: 20px;
+  width: 60%;
 }

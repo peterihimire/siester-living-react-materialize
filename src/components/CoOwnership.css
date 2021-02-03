@@ -10,6 +10,9 @@ section#coownership {
 .coownership-img-div img {
   width: 100%;
 }
+/* .coownership-img-div .demo {
+  width: 100%;
+} */
 .coownership-header {
   display: flex;
   justify-content: center;
