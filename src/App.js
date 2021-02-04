@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import FaqPage from "./pages/FaqPage";
 import CoOwnershipPage from "./pages/CoOwnershipPage";
 import DetailPage from "./pages/DetailPage";
+import RenderTop from "./components/RenderTop";
 
 function App() {
   // For Nav Color
@@ -35,6 +36,7 @@ function App() {
   return (
     <>
       <Navbar defNavColor={navColor.isColor} />
+      <RenderTop />
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/about" component={AboutPage} />

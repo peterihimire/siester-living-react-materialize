@@ -5,7 +5,6 @@
 - [General info](#general-info)
 - [Technologies](#technologies)
 - [Setup](#setup)
-- [Sources](#sources)
 - [Demo](#demo)
 
 ## General info
