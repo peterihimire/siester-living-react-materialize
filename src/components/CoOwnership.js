@@ -5,6 +5,7 @@ import homeImg from "../assets/home-img.jpg";
 // import LazySkele from "../components/LazySkele";
 
 const CoOwnership = () => {
+  console.log(homeImg.preSrc);
   return (
     <section id="coownership">
       <div className="container">

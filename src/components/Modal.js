@@ -59,7 +59,7 @@ class Modal extends Component {
                 </div>
                 <div className="small-img">
                   {imgs.map((img) => (
-                    <img src={img} alt="img array" />
+                    <img key={img} src={img} alt="img array" />
                   ))}
                 </div>
               </div>
