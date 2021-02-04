@@ -113,6 +113,11 @@ a {
   color: var(--pri-color) !important;
   text-decoration: underline !important;
 }
+.sidenav li > .active-2 {
+  background-color: none !important;
+  color: var(--pri-color) !important;
+  text-decoration: underline !important;
+}
 .sidenav-logo {
   padding: 2rem 100px 0 100px;
 }
