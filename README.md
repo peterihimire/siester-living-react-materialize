@@ -5,10 +5,12 @@
 - [General info](#general-info)
 - [Technologies](#technologies)
 - [Setup](#setup)
+- [Sources](#sources)
+- [Demo](#demo)
 
 ## General info
 
-This project is simple Lorem ipsum dolor generator.
+This project is a micro-realestate app frontend that I am curruently working on.
 
 ## Technologies
 
@@ -28,7 +30,11 @@ $ npm install
 $ npm start
 ```
 
-## Sources
+<!-- ## Sources
 
 This app is inspired by Rando Kim book „Time of Your Life”
-and Android app tutorial by [@eericon](https://www.eericon.github.io/post/timer-android)
+and Android app tutorial by [@eericon](https://www.eericon.github.io/post/timer-android) -->
+
+## Demo
+
+You can view the live demo of this application by visiting this [link](https://siesterliving.netlify.app) 
