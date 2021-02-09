@@ -121,7 +121,7 @@ a {
 .sidenav-logo {
   padding: 2rem 100px 0 100px;
 }
-.sidenav-close {
+.mobnav-close {
   display: flex !important;
   justify-content: flex-end !important;
   padding: 1rem 100px 2rem 0 !important ;

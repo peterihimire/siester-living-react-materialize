@@ -83,7 +83,7 @@ const Navbar = (props) => {
       </div>
 
       <ul className="sidenav" id="mobile-nav">
-        <div className="sidenav-close">
+        <div className="sidenav-close mobnav-close">
           <img src={close} alt="close-icon " />
         </div>
         {/* <div className="sidenav-logo">
@@ -92,7 +92,7 @@ const Navbar = (props) => {
           </Link>
         </div> */}
 
-        <li className="nav-item ">
+        <li className="nav-item sidenav-close">
           <NavLink
             exact
             activeClassName="active-2"
@@ -102,7 +102,7 @@ const Navbar = (props) => {
             home
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item sidenav-close">
           <NavLink
             exact
             activeClassName="active-2"
@@ -112,7 +112,7 @@ const Navbar = (props) => {
             about us
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item sidenav-close">
           <NavLink
             exact
             activeClassName="active-2"
@@ -122,7 +122,7 @@ const Navbar = (props) => {
             co-ownership
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item sidenav-close">
           <NavLink
             exact
             activeClassName="active-2"
