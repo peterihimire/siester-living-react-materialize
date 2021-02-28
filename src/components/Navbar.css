@@ -230,11 +230,6 @@ img.menu-icon-img {
     width: 100%;
     bottom: 90px;
   }
-  .sidenav-close {
-    display: flex !important;
-    justify-content: flex-end !important;
-    padding: 1rem 50px 2rem 0 !important ;
-  }
 }
 
 @media (max-width: 600px) {
@@ -250,11 +245,11 @@ img.menu-icon-img {
     text-transform: capitalize !important;
     padding: 0 2rem !important;
   }
-  .sidenav-close {
+  /* .sidenav-close {
     display: flex !important;
     justify-content: flex-end !important;
     padding: 1rem 2rem 2rem 0 !important ;
-  }
+  } */
   .sidenav-btn-div {
     padding: 0 2rem;
   }
