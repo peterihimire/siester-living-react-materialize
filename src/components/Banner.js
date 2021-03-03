@@ -67,7 +67,35 @@ const Banner = () => {
   return (
     <section id="home">
       <div className="row full-height">
-        <div className="carousel carousel-slider full-height">
+
+        <div className='full-height phone-main visible-xs'> 
+          <div className="for-phone visible-xs">
+            <img
+              src={bannerImg1Xs}
+              alt="banner"
+              className="home-abs-img visible-xs"
+            />
+            <div className="container">
+              <div className="main-txt-wrapper col s12 m10 l4 center-xs">
+                <h1 className="banner-title pri-color">
+                  <span className="sec-color">Rent a home for</span>
+                  <br className="hidden-xs" />a day or more
+                </h1>
+
+                <div className="home-btn-wrapper">
+                  <button
+                    className="modal-trigger home-banner-btn"
+                    data-target="book-now"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel carousel-slider full-height hidden-xs">
           <div
             className="carousel-item slide-banner"
             id="first-slide"

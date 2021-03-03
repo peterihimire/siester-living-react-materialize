@@ -123,4 +123,11 @@ img.home-abs-img {
   .main-txt-wrapper h1 {
     font-size: 2.5rem;
   }
+  .phone-main {
+    position: relative !important;
+    width: 100% !important;
+  }
+  .for-phone {
+    background-position: 85% !important;
+  }
 }
