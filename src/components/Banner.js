@@ -67,19 +67,18 @@ const Banner = () => {
   return (
     <section id="home">
       <div className="row full-height">
-
-        <div className='full-height phone-main visible-xs'> 
+        <div className="full-height phone-main visible-xs">
           <div className="for-phone visible-xs">
             <img
               src={bannerImg1Xs}
               alt="banner"
-              className="home-abs-img visible-xs"
+              className="phone-home-img visible-xs" // This is where the problem is, in the home-abs-img class
             />
             <div className="container">
               <div className="main-txt-wrapper col s12 m10 l4 center-xs">
                 <h1 className="banner-title pri-color">
                   <span className="sec-color">Rent a home for</span>
-                  <br className="hidden-xs" />a day or more
+                  <br className="hidden-xs" /> a day or more
                 </h1>
 
                 <div className="home-btn-wrapper">
